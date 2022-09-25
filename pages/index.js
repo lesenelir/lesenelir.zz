@@ -1,5 +1,8 @@
 import Head from 'next/head'
 
+import Layout from "../components/layout"
+
+
 function HomePage() {
   return (
     <div>
@@ -9,7 +12,10 @@ function HomePage() {
         <link rel="icon" href={`/favicon.ico`} />
       </Head>
 
-      <h1>Blog Home Page</h1>
+
+    <Layout>
+      Hello
+    </Layout>
 
     </div>
   )

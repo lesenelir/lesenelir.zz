@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: center;
+  /*background-color: blue;*/
+  padding: 32px;
+}
+
+.link {
+  border-bottom: 1px solid rgba(125,125,125,.3);
+  transition: border .3s ease-in-out;
+}
+
+.link:hover {
+  border-bottom: 1px solid rgba(125,125,125,1);
+  transition: border .3s ease-in-out;
+}
