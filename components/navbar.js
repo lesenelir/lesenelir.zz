@@ -16,13 +16,12 @@ function Navbar() {
         <Link href={`posts`}>
           <a className={styles.link}>Blog</a>
         </Link>
-        <Link href={`timeline`}>
-          <a className={styles.link}>Timeline</a>
-        </Link>
         <Link href={`projects`}>
           <a className={styles.link}>Projects</a>
         </Link>
-
+        <Link href={`timeline`}>
+          <a className={styles.link}>Timeline</a>
+        </Link>
         <a
           href='https://github.com/lesenelir'
           rel='noreferrer'
