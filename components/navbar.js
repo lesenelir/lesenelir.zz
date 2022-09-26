@@ -13,10 +13,13 @@ function Navbar() {
         <Link href='/'>
           <a className={styles.link}>Me</a>
         </Link>
-        <Link href={`blog`}>
+        <Link href={`posts`}>
           <a className={styles.link}>Blog</a>
         </Link>
-        <Link href={`project`}>
+        <Link href={`timeline`}>
+          <a className={styles.link}>Timeline</a>
+        </Link>
+        <Link href={`projects`}>
           <a className={styles.link}>Projects</a>
         </Link>
 

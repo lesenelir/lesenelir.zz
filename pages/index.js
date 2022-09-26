@@ -14,7 +14,7 @@ function HomePage() {
 
 
     <Layout>
-      Hello
+      Home me Page
     </Layout>
 
     </div>
