@@ -1,16 +1,17 @@
 .container {
-  display: flex;
-  justify-content: center;
-  /*background-color: blue;*/
-  padding: 32px;
+  /*display: flex;*/
+  /*justify-content: flex-start;*/
+  /*background-color: violet;*/
+  font-size: 14px;
+  color: rgba(125, 125, 125, .6);
 }
 
 .link {
-  border-bottom: 1px solid rgba(125,125,125,.3);
+  border-bottom: 1px solid rgba(125, 125, 125, .3);
   transition: border .3s ease-in-out;
 }
 
 .link:hover {
-  border-bottom: 1px solid rgba(125,125,125,1);
+  border-bottom: 1px solid rgba(125, 125, 125, .6);
   transition: border .3s ease-in-out;
 }

@@ -11,7 +11,7 @@ function Navbar() {
 
       <nav className={styles.nav}>
         <Link href='/'>
-          <a className={styles.link}>Me</a>
+          <a className={styles.link}>Home</a>
         </Link>
         <Link href={`posts`}>
           <a className={styles.link}>Blog</a>
@@ -34,7 +34,6 @@ function Navbar() {
           &#xe64c;
         </span>
       </nav>
-
     </div>
   )
 }

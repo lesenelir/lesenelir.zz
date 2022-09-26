@@ -1,7 +1,5 @@
 import Head from "next/head"
 import Navbar from "./navbar"
-import Footer from "./footer"
-
 
 export const siteName = 'Lesenelir Zhou'
 
@@ -23,8 +21,6 @@ function Layout(props) {
         {/* Content内容不是固定的，不放入Layout，Layout随着改变 */}
         {/*Layout布局包裹不同的内容（由URL来决定），显示*/}
         {props.children}
-        {/* Footer是固定不变的 */}
-        <Footer/>
       </div>
 
     </div>
