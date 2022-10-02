@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  color: #000000;
+}
+
+.subTitle {
+  font-style: oblique;
+  color: rgb(125, 125, 125);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* Item 样式 */
+.item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+
+.icon {
+  font-size: 34px;
+  line-height: 80px;
+  color: rgba(85, 85, 85, .6);
+}
+
+.name {
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.description {
+  margin-top: -10px;
+  font-size: 14px;
+  color: rgba(125, 125, 125, .6);
+  transition: 0.3s;
+}
+
+.item:hover {
+  background-color: rgba(125, 125, 125, .1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.item:hover .name {
+  color: black;
+  transition: 0.3s;
+}
+
+.item:hover .description {
+  color: rgba(125, 125, 125);
+  transition: 0.3s;
+}
+
+.item:hover .icon {
+  color: rgba(85, 85, 85, 1);
+  transition: 0.3s;
+}
