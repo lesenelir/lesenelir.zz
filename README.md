@@ -43,6 +43,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 remark 转 只有html 没有样式，样式需要自己写
 
 
+Front Matter ==> npm i gray-matter
+作用：解析每一个markdown文件的metadata，像title、date
+
+
+fs 操作文件系统
+path 操作路径
+matter 读取markdown 的metadata
+
+
 
 
 
