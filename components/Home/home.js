@@ -1,6 +1,7 @@
-import styles from '../../styles/home.module.css'
 import Divider from "../divider"
 import Footer from "../footer"
+
+import styles from '../../styles/home.module.css'
 
 function Home() {
   return (

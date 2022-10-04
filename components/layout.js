@@ -5,7 +5,6 @@ export const siteName = 'Lesenelir Zhou'
 
 //Layout 是一个所有page页面的公用组件
 function Layout(props) {
-
   return (
     <div>
       <Head>

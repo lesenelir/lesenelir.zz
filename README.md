@@ -39,6 +39,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 
 2. posts 页面不是写死，而是通过node从文件系统中读取，并自动转换为html 应用样式
+- markdown 转 html+样式  ： remark，
+remark 转 只有html 没有样式，样式需要自己写
+
 
 
 

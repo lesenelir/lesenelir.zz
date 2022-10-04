@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.title {
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+.subTitle {
+  margin-bottom: 50px;
+}
