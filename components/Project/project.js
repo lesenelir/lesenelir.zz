@@ -29,7 +29,7 @@ function Project() {
             repo={'https://github.com/lesenelir/meta-baidu'}
           />
           <Item
-            name={'Dog and Cat'}
+            name={'Cats Classifier'}
             description={'The classification of four cat-kinds with cnn and Django'}
             icon='&#xe62c;'
             repo={'https://github.com/lesenelir/meta-portfolio'}

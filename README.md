@@ -38,5 +38,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 1. 头部、footer都保持不变，写在Layout，content内容根据url路径来显示内容
 
 
+2. posts 页面不是写死，而是通过node从文件系统中读取，并自动转换为html 应用样式
+
+
 
 
