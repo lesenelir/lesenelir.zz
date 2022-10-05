@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.year {
+  font-size: 30px;
+  color: #AAAAAA;
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.itemContainer {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.date {
+  font-size: 14px;
+  color: rgba(125, 125, 125, .5);
+  transition: 0.3s;
+}
+
+.itemContainer:hover .title {
+  color: #000000;
+}
+
+.itemContainer:hover .date {
+  color: rgba(125, 125, 125, 1);
+}

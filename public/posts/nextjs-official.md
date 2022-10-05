@@ -1,5 +1,5 @@
 ---
-title: 'Next.js Official'
+title: 'Next.js official tutorial'
 date: '2022-09-28'
 ---
 
