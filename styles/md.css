@@ -1,0 +1,74 @@
+/* Markdown Format CSS */
+.md h1 {
+  font-size: 24px;
+}
+
+.md h2 {
+  font-size: 22px;
+}
+
+.md h3 {
+  font-size: 20px;
+}
+
+.md h4 {
+  font-size: 18px;
+}
+
+.md h5,
+.md h6 {
+  font-size: 16px;
+}
+
+.md h1,
+.md h2,
+.md h3,
+.md h4,
+.md h5,
+.md h6,
+.md strong {
+  color: #000000;
+}
+
+.md p,
+.md ul,
+.md ol {
+  font-size: 16px;
+  line-height: 28px;
+  color: #555555;
+}
+
+.md li {
+  margin: 5px 0;
+}
+
+.md blockquote {
+  padding: 0 16px;
+  margin-left: 0;
+  border-left: 4px solid #7D7D7D;
+}
+
+.md code {
+  display: block;
+  overflow-x: auto;
+  background-color: #F8F8F8;
+  padding: 3px;
+  margin: 0 2px;
+  border-radius: 5px;
+}
+
+.md p img {
+  max-width: 100%;
+  margin: 5px 0;
+}
+
+.md a {
+  color: #000000;
+  border-bottom: 1px solid rgba(125,125,125,.3);
+  transition: border .3s ease-in-out;
+}
+
+.md a:hover {
+  border-bottom: 1px solid rgba(125,125,125,1);
+  transition: border .3s ease-in-out;
+}

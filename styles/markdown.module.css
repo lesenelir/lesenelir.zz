@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.date {
+  font-size: 15px;
+  text-align: end;
+  transition: 0.3s;
+}
+
+.article {
+  margin: 32px 0;
+}

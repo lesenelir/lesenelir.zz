@@ -3,10 +3,6 @@ title: 'Next.js official tutorial'
 date: '2022-09-28'
 ---
 
-# Nextjs Learn By Website
-
->该文档教程来自于Nextjs英文文档
-
 ## Basic Knowledge
 
 ### 1. About Nextjs
@@ -52,7 +48,6 @@ script标签可以对DOM进行增删修改
 >HTML源文件代表初始内容文件，DOM代表更新后的page内容
 
 ```js
-// 命令式编程
 <script type="text/javascript">
   const app = document.getElementById('app');
   const header = document.createElement('h1');
@@ -68,7 +63,7 @@ script标签可以对DOM进行增删修改
 
 **Getting Started with React：**
 
->react: React核心Librart ； react-dom: 给出具体的dom方法使得react可以与dom操作
+>react: React核心Library ； react-dom: 给出具体的dom方法使得react可以与dom操作
 
 **JSX:**
 
