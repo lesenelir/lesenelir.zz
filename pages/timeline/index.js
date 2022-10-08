@@ -11,11 +11,15 @@ function TimelinePage(props) {
   return (
     <>
       <Layout>
-        <h1 className={styles.title}>Timeline</h1>
-        <article className='md'>
-          <div dangerouslySetInnerHTML={{ __html: timelineData.contentHtml }} />
-        </article>
-        <Footer/>
+        <div className={styles.container}>
+          <div>
+            <h1 className={styles.title}>Timeline</h1>
+            <article className='md time'>
+              <div dangerouslySetInnerHTML={{ __html: timelineData.contentHtml }} />
+            </article>
+            <Footer/>
+          </div>
+        </div>
       </Layout>
     </>
   )

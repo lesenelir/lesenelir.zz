@@ -1,7 +1,6 @@
 import Head from "next/head"
 import Layout from "../../components/layout"
 import Content from "../../components/Post/content"
-// import Footer from "../../components/footer"
 
 import {getSortedPostsData} from "../../lib/postsTool"
 
@@ -16,7 +15,6 @@ function PostsPage(props) {
 
       <Layout>
         <Content allPosts={allPostsData}/>
-        {/*<Footer/>*/}
       </Layout>
     </>
   )
