@@ -29,7 +29,7 @@ export default TimelinePage
 
 export async function getStaticProps() {
   const timelineData = await getTimePost()
-  console.log(timelineData)
+  // console.log(timelineData)
 
   return {
     props: {
