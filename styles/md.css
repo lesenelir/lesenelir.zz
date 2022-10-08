@@ -27,7 +27,7 @@
 .md h5,
 .md h6,
 .md strong {
-  color: #000000;
+  color: var(--surfaceStrong);
 }
 
 .md p,
@@ -35,7 +35,7 @@
 .md ol {
   font-size: 16px;
   line-height: 28px;
-  color: #555555;
+  color: var(--surfaceMain);
 }
 
 .md li {
@@ -45,13 +45,14 @@
 .md blockquote {
   padding: 0 16px;
   margin-left: 0;
-  border-left: 4px solid #7D7D7D;
+  border-left: 4px solid var(--surfaceSub);
 }
 
 .md code {
   display: block;
   overflow-x: auto;
-  background-color: #F8F8F8;
+  /*TODO*/
+  background-color: var(--surfaceCodeBlock);
   padding: 3px;
   margin: 0 2px;
   border-radius: 5px;

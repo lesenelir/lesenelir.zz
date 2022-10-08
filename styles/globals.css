@@ -2,7 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  color: #555555;
+  /*color: #555555;*/
+  /*background-color: var(--surfaceBackground);*/
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -16,17 +17,39 @@ a {
   box-sizing: border-box;
 }
 
+.layout {
+  color: var(--surfaceMain);
+  background-color: var(--surfaceBackground);
+}
+
 @font-face {
   font-family: 'iconfont';
   src: url('/iconfont.ttf') format('truetype');
 }
 
 .iconfont {
-  font-family: "iconfont" !important;
+  font-family: "iconfont", serif !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark Theme & Light Theme */
+.layout[color-mode='light'] {
+  --surfaceMain: #555555;  /* Deep Gray */
+  --surfaceSub: #7D7D7D;   /* Light Gray */
+  --surfaceStrong: #000000;
+  --surfaceBackground: #ffffff;
+  --surfaceCodeBlock: #F8F8F8;
+}
+
+.layout[color-mode='dark'] {
+  --surfaceMain: #BBBBBB;
+  --surfaceSub: #E5E7EB;
+  --surfaceStrong: #ffffff;
+  --surfaceBackground: #000000;
+  --surfaceCodeBlock: #4b4b4b;
 }
 
 @media (prefers-color-scheme: dark) {

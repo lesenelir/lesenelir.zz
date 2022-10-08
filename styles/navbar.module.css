@@ -13,7 +13,7 @@
 }
 
 .signature:hover {
-  color: #000000;
+  color: var(--surfaceStrong);
 }
 
 .nav {
@@ -30,7 +30,7 @@
 }
 
 .icon:hover {
-  color: #000000;
+  color: var(--surfaceStrong);
 }
 
 .link {
@@ -38,5 +38,5 @@
 }
 
 .link:hover {
-  color: #000000;
+  color: var(--surfaceStrong);
 }

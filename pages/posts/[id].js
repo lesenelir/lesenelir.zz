@@ -1,12 +1,12 @@
+import {useEffect} from "react"
 import Head from "next/head"
 import Layout from "../../components/layout"
 import Footer from "../../components/footer"
 import Date from "../../components/date"
-import {useEffect} from "react"
-import {getAllPostIds, getPostDataById} from "../../lib/postsTool"
 import "highlight.js/styles/github.css"
 import hljs from "highlight.js/lib/core"
 import javascript from "highlight.js/lib/languages/javascript"
+import {getAllPostIds, getPostDataById} from "../../lib/postsTool"
 
 import styles from '../../styles/markdown.module.css'
 

@@ -52,5 +52,6 @@ path 操作路径
 matter 读取markdown 的metadata
 
 
+主题切换需要保持状态，则需要localStorage
 
 

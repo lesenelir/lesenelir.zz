@@ -4,7 +4,8 @@
 }
 
 .title {
-  color: #000000;
+  /*color: #000000;*/
+  color: var(--surfaceStrong);
 }
 
 .subTitle {
@@ -30,11 +31,13 @@
 .icon {
   font-size: 34px;
   line-height: 80px;
-  color: rgba(85, 85, 85, .6);
+  /*color: rgba(85, 85, 85, .6);*/
+  color: var(--surfaceMain);
 }
 
 .name {
   font-size: 16px;
+  color: var(--surfaceMain);
   transition: 0.3s;
 }
 
@@ -52,7 +55,8 @@
 }
 
 .item:hover .name {
-  color: black;
+  /*color: black;*/
+  color: var(--surfaceStrong);
   transition: 0.3s;
 }
 
@@ -62,6 +66,7 @@
 }
 
 .item:hover .icon {
-  color: rgba(85, 85, 85, 1);
+  /*color: rgba(85, 85, 85, 1);*/
+  color: var(--surfaceStrong);
   transition: 0.3s;
 }

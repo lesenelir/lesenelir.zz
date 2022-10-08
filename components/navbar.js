@@ -2,7 +2,18 @@ import Link from "next/link"
 
 import styles from '../styles/navbar.module.css'
 
-function Navbar() {
+function Navbar(props) {
+  const {theme, setTheme} = props
+
+  const changeTheme = () => {
+    setTheme(preTheme => {
+      return preTheme === 'light' ? 'dark' : 'light'
+    })
+    // 异步更新State，拿到的还是原来的theme
+    // console.log(theme)
+    localStorage.setItem('mode', theme === 'light' ? 'dark' : 'light')
+  }
+
   return (
     <div className={styles.container}>
       <Link href='/'>
@@ -30,9 +41,17 @@ function Navbar() {
         >
           &#xe732;
         </a>
-        <span className={`iconfont ${styles.icon}`}>
-          &#xe64c;
-        </span>
+        {
+          theme === 'light' ? (
+            <span className={`iconfont ${styles.icon}`} onClick={changeTheme}>
+              &#xe64c;
+            </span>
+          ) : (
+            <span className={`iconfont ${styles.icon}`} onClick={changeTheme}>
+              &#xe781;
+            </span>
+          )
+        }
       </nav>
     </div>
   )
