@@ -54,4 +54,6 @@ matter 读取markdown 的metadata
 
 主题切换需要保持状态，则需要localStorage
 
+动画： 代码 不能马上执行，需要等时间再执行setInterval / requestAnimationFrame
+
 

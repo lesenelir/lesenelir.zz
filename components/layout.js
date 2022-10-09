@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react"
 import Head from "next/head"
 import Navbar from "./navbar"
+import Animation from "./animation"
 
 import styles from '../styles/layout.module.css'
 
@@ -9,6 +10,7 @@ export const siteName = 'Lesenelir Zhou'
 function Layout(props) {
   const [theme, setTheme] = useState('light')
 
+  // theme change Effect
   useEffect(() => {
     if (localStorage.getItem('mode')) {
       setTheme(localStorage.getItem('mode'))
@@ -24,6 +26,7 @@ function Layout(props) {
       </Head>
 
       {/* All Pages Layout Component */}
+      <Animation/>
       <Navbar theme={theme} setTheme={setTheme}/>
       <div className={styles.container}>
         {props.children}
