@@ -10,7 +10,6 @@ import {getAllPostIds, getPostDataById} from "../../lib/postsTool"
 
 import styles from '../../styles/markdown.module.css'
 
-
 function Post(props) {
   const {postData} = props
   useEffect(() => {
