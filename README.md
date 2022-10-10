@@ -1,59 +1,91 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# meta-portfolio 💨
 
-## Getting Started
+my portfolio blog website built with next.js ~~  Keeping Building
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
+## Introduction
+
+This project is a portfolio website built with nextjs.
+
+## Features
+
+- [x] use file routing to display pages content according to path url
+- [x] use remark to convey markdown to html with css
+- [x] use node.js to read file system
+- [x] use css variables and property selectors to switch between themes
+- [x] use canvas to animate the background of the all pages
+- [x] static site generation with data
+
+## Run and Deploy
+
+- Get the repository code
+
+```
+git clone https://github.com/lesenelir/meta-portfolio.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Installing dependencies
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+npm i
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Run
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+npm run dev
+```
 
-## Learn More
+- Deploy 
 
-To learn more about Next.js, take a look at the following resources:
+> My blog is deployed on the vercel platform
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+If you need to deploy your website to a production environment, I highly recommend you to use the [vercel](https://vercel.com/dashboard) platform.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+You can deploy your github repo project on vercel and use custom domains.
 
 
---------------------------------------------------------------------------------------------
-1. 头部、footer都保持不变，写在Layout，content内容根据url路径来显示内容
+## Running Screenshots
 
+- Light Theme
 
-2. posts 页面不是写死，而是通过node从文件系统中读取，并自动转换为html 应用样式
-- markdown 转 html+样式  ： remark，
-remark 转 只有html 没有样式，样式需要自己写
+![Light](https://raw.githubusercontent.com/lesenelir/meta-portfolio/master/docs-imgs/light.png)
 
+- Dark Theme
 
-Front Matter ==> npm i gray-matter
-作用：解析每一个markdown文件的metadata，像title、date
+![Dark](https://raw.githubusercontent.com/lesenelir/meta-portfolio/master/docs-imgs/dark.png)
 
+## Browser Support
 
-fs 操作文件系统
-path 操作路径
-matter 读取markdown 的metadata
+`Chrome` is the recommended browser for local development
 
+Modern browsers supported, IE not supported
 
-主题切换需要保持状态，则需要localStorage
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png" alt="IE" width="24px" height="24px"  />](http://godban.github.io/browsers-support-badges/)IE | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt=" Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)Safari |
+| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|                         not support                          |                       last 2 versions                        |                       last 2 versions                        |                       last 2 versions                        |                       last 2 versions                        |
 
-动画： 代码 不能马上执行，需要等时间再执行setInterval / requestAnimationFrame
+## MIT License
 
+MIT License
 
+Copyright (c) 2022 Lesenelir <<miaomiaobabyzy@gmail.com>>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
