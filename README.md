@@ -16,6 +16,7 @@ This project is a portfolio website built with nextjs.
 - [x] use css variables and property selectors to switch between themes
 - [x] use canvas to animate the background of the all pages
 - [x] static site generation with data
+- [x] add mobile support
 
 ## Run and Deploy
 
