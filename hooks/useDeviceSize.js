@@ -5,8 +5,10 @@ const useDeviceSize = () => {
   const [height, setHeight] = useState(0)
 
   const handleWindowResize = () => {
-    setWidth(window.innerWidth)
-    setHeight(window.innerHeight)
+    // setWidth(window.innerWidth)
+    // setHeight(window.innerHeight)
+    setWidth(window.screen.width)
+    setHeight(window.screen.height)
   }
 
   useEffect(() => {
