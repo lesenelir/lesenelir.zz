@@ -16,6 +16,15 @@
   color: var(--surfaceStrong);
 }
 
+.pc {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+
 .nav {
   display: flex;
   align-items: center;
@@ -39,4 +48,15 @@
 
 .link:hover {
   color: var(--surfaceStrong);
+}
+
+@media screen and (max-width: 750px) {
+  .mobile {
+    display: block;
+  }
+
+  .pc {
+    display: none;
+  }
+
 }

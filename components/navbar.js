@@ -21,18 +21,33 @@ function Navbar(props) {
       </Link>
 
       <nav className={styles.nav}>
-        <Link href='/'>
-          <a className={styles.link}>Home</a>
-        </Link>
+        {/*Mobile Icon*/}
         <Link href={`/posts`}>
-          <a className={styles.link}>Blog</a>
+          <span className={`iconfont ${styles.mobile} ${styles.icon}`}>
+            &#xe634;
+          </span>
         </Link>
         <Link href={`/projects`}>
-          <a className={styles.link}>Projects</a>
+          <span className={`iconfont ${styles.mobile} ${styles.icon}`}>
+            &#xe617;
+          </span>
+        </Link>
+
+        {/*PC Icon*/}
+        <Link href='/'>
+          <a className={`${styles.link} ${styles.pc}`}>Home</a>
+        </Link>
+        <Link href={`/posts`}>
+          <a className={`${styles.link} ${styles.pc}`}>Blog</a>
+        </Link>
+        <Link href={`/projects`}>
+          <a className={`${styles.link} ${styles.pc}`}>Projects</a>
         </Link>
         <Link href={`/timeline`}>
-          <a className={styles.link}>Timeline</a>
+          <a className={`${styles.link} ${styles.pc}`}>Timeline</a>
         </Link>
+
+        {/*Default Icon*/}
         <a
           href='https://github.com/lesenelir'
           rel='noreferrer'

@@ -13,24 +13,6 @@ function Animation() {
     const ctx = canvas.getContext('2d')
     const pendingTasks = [] // 存放function数组
 
-    const init = () => {
-      step({
-        start: {x: 0, y: 0},
-        length: 25,
-        theta: Math.PI / 6
-      })
-      step({
-        start: {x: width, y: height / 2},
-        length: 40,
-        theta: Math.PI
-      })
-      step({
-        start: {x: width / 2, y: height},
-        length: 40,
-        theta: Math.PI / 270
-      })
-    }
-
     // 绘制两个点连线
     const lineTo = (p1, p2) => {
       ctx.strokeStyle = '#88888845'
@@ -93,8 +75,48 @@ function Animation() {
         startFrame()
       })
     }
-    init(ctx)
-    startFrame()
+
+    const initPC = () => {
+      step({
+        start: {x: 0, y: 0},
+        length: 25,
+        theta: Math.PI / 6
+      })
+      step({
+        start: {x: width, y: height / 2},
+        length: 40,
+        theta: Math.PI
+      })
+      step({
+        start: {x: width / 2, y: height},
+        length: 40,
+        theta: Math.PI / 270
+      })
+    }
+
+    const initMobile = () => {
+      step({
+        start: {x: 0, y: 0},
+        length: 25,
+        theta: Math.PI / 6
+      })
+      step({
+        start: {x: width / 2, y: height},
+        length: 40,
+        theta: Math.PI / 270
+      })
+    }
+
+
+    if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+      // mobile
+      initMobile()
+      startFrame()
+    } else {
+      // pc
+      initPC()
+      startFrame()
+    }
   }, [width, height])
 
 

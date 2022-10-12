@@ -4,3 +4,10 @@
   padding: 0 40px;
   min-height: 100vh;
 }
+
+@media screen and (max-width: 750px) {
+  .container {
+    margin-top: 5px;
+    padding: 0 25px;
+  }
+}
