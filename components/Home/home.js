@@ -121,7 +121,7 @@ function Home() {
               target='_blank'
               className={styles.link}
             >
-              miaomiaobabyzy@gmail.com
+              hi@lesenelir.me
             </a>
           </p>
         </article>
