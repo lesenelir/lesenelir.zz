@@ -116,7 +116,7 @@ function Home() {
           <p>
             Mail me at {' '}
             <a
-              href='mailto:miaomiaobabyzy@gmail.com'
+              href='mailto:hi@lesenelir.me'
               rel='noreferrer'
               target='_blank'
               className={styles.link}

@@ -27,11 +27,11 @@ function Layout(props) {
 
       {/* All Pages Layout Component */}
       {/*<Animation/>*/}
-      <Plum/>
       <Navbar theme={theme} setTheme={setTheme}/>
       <div className={styles.container}>
         {props.children}
       </div>
+      <Plum/>
     </div>
   )
 }
