@@ -9,7 +9,7 @@ function Plum() {
   const r180 = Math.PI
   const r90 = Math.PI / 2
   const r15 = Math.PI / 12
-  const color = '#88888850'
+  const color = '#88888830'
 
   const { random } = Math
 
