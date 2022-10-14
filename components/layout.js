@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react"
 import Head from "next/head"
 import Navbar from "./navbar"
-import Animation from "./animation"
+import Plum from "./plum"
 
 import styles from '../styles/layout.module.css'
 
@@ -26,7 +26,8 @@ function Layout(props) {
       </Head>
 
       {/* All Pages Layout Component */}
-      <Animation/>
+      {/*<Animation/>*/}
+      <Plum/>
       <Navbar theme={theme} setTheme={setTheme}/>
       <div className={styles.container}>
         {props.children}
