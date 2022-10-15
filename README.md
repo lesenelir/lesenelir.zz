@@ -1,6 +1,6 @@
 # meta-portfolio 💨
 
-my portfolio blog website built with next.js ~~  Keeping Building
+My portfolio blog website built with next.js and was inspired by antfu's blog. Keeping Building~~
 
 ---
 
@@ -51,11 +51,11 @@ You can deploy your github repo project on vercel and use custom domains.
 
 - Light Theme
 
-![Light](https://raw.githubusercontent.com/lesenelir/meta-portfolio/master/docs-imgs/light.png)
+![Light](https://raw.githubusercontent.com/lesenelir/meta-portfolio/master/docs-imgs/light2.png)
 
 - Dark Theme
 
-![Dark](https://raw.githubusercontent.com/lesenelir/meta-portfolio/master/docs-imgs/dark.png)
+![Dark](https://raw.githubusercontent.com/lesenelir/meta-portfolio/master/docs-imgs/dark2.png)
 
 ## Browser Support
 
@@ -71,7 +71,7 @@ Modern browsers supported, IE not supported
 
 MIT License
 
-Copyright (c) 2022 Lesenelir <<miaomiaobabyzy@gmail.com>>
+Copyright (c) 2022 Lesenelir <<hi@lesenelir.me>>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
