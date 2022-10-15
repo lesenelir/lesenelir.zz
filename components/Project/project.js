@@ -32,7 +32,7 @@ function Project() {
             name={'Cats Classifier'}
             description={'The classification of four cat-kinds with cnn and Django'}
             icon='&#xe62c;'
-            repo={'https://github.com/lesenelir/meta-portfolio'}
+            repo={'https://github.com/lesenelir/Django-Cats-Classifier'}
           />
           <Item
             name={'LearnWeb3'}
