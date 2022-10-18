@@ -119,7 +119,6 @@ function Animation() {
     }
   }, [width, height])
 
-
   return (
     <canvas
       ref={canvasElement}

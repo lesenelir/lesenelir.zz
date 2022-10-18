@@ -11,7 +11,7 @@ function Plum() {
   const r15 = Math.PI / 12
   const color = '#88888820'
 
-  const { random } = Math
+  const {random} = Math
 
   const start = useRef()
   const init = useRef(4)
@@ -28,14 +28,14 @@ function Plum() {
     canvas.width = width
     canvas.height = height
 
-    return { ctx }
-  };
+    return {ctx}
+  }
 
   const polar2cart = (x = 0, y = 0, r = 0, theta = 0) => {
     const dx = r * Math.cos(theta)
     const dy = r * Math.sin(theta)
     return [x + dx, y + dy]
-  };
+  }
 
   let steps = []
   let prevSteps = []
@@ -60,8 +60,8 @@ function Plum() {
 
   const fn = async () => {
     const canvas = el.current
-    const { ctx } = initCanvas(canvas, size.width, size.height)
-    const { width, height } = canvas
+    const {ctx} = initCanvas(canvas, size.width, size.height)
+    const {width, height} = canvas
 
     const step = (x, y, rad) => {
       const length = random() * len.current

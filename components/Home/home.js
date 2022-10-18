@@ -126,10 +126,8 @@ function Home() {
           </p>
         </article>
         <Footer/>
-
       </div>
     </div>
-
   )
 }
 

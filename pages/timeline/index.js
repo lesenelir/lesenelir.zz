@@ -4,7 +4,6 @@ import {getTimePost} from "../../lib/timeTool"
 
 import styles from '../../styles/timeline.module.css'
 
-
 function TimelinePage(props) {
   const {timelineData} = props
 
@@ -15,7 +14,7 @@ function TimelinePage(props) {
           <div>
             <h1 className={styles.title}>Timeline</h1>
             <article className='md'>
-              <div dangerouslySetInnerHTML={{ __html: timelineData.contentHtml }} />
+              <div dangerouslySetInnerHTML={{__html: timelineData.contentHtml}}/>
             </article>
             <Footer/>
           </div>

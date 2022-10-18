@@ -26,9 +26,9 @@ function Post(props) {
       <Layout>
         {/*<div className={styles.container}>*/}
         <h1 className={styles.title}>{postData.title}</h1>
-        <Date dateString={postData.date} className={styles.date} />
+        <Date dateString={postData.date} className={styles.date}/>
         <article className='md'>
-          <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+          <div dangerouslySetInnerHTML={{__html: postData.contentHtml}}/>
         </article>
         <Footer/>
         {/*</div>*/}
