@@ -1,8 +1,9 @@
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+/*多写div会造成代码块code在移动端的 */
+/*.container {*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  justify-content: center;*/
+/*}*/
 
 .title {
   color: var(--surfaceStrong);

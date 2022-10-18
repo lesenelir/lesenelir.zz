@@ -3,7 +3,7 @@ import Head from "next/head"
 import Layout from "../../components/layout"
 import Footer from "../../components/footer"
 import Date from "../../components/date"
-import "highlight.js/styles/github.css"
+import "highlight.js/styles/lioshi.css"
 import hljs from "highlight.js/lib/core"
 import javascript from "highlight.js/lib/languages/javascript"
 import {getAllPostIds, getPostDataById} from "../../lib/postsTool"
@@ -13,7 +13,7 @@ import styles from '../../styles/markdown.module.css'
 function Post(props) {
   const {postData} = props
   useEffect(() => {
-    hljs.registerLanguage("jsx", javascript);
+    hljs.registerLanguage("jsx", javascript)
     hljs.highlightAll();
   })
 
@@ -24,16 +24,14 @@ function Post(props) {
       </Head>
 
       <Layout>
-        <div className={styles.container}>
-          <div>
-            <h1 className={styles.title}>{postData.title}</h1>
-            <Date dateString={postData.date} className={styles.date} />
-            <article className='md'>
-              <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-            </article>
-            <Footer/>
-          </div>
-        </div>
+        {/*<div className={styles.container}>*/}
+        <h1 className={styles.title}>{postData.title}</h1>
+        <Date dateString={postData.date} className={styles.date} />
+        <article className='md'>
+          <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        </article>
+        <Footer/>
+        {/*</div>*/}
       </Layout>
     </>
   )
@@ -60,6 +58,3 @@ export async function getStaticProps({params}) {
     }
   }
 }
-
-
-
