@@ -8,7 +8,9 @@ function Project() {
     <div className={styles.container}>
       <div>
         <h1 className={styles.title}>Projects</h1>
-        <p className={styles.subTitle}>Some of my projects</p>
+        <p className={styles.subTitle}>List of my projects</p>
+
+        <h4 className={styles.h4Title}>Front-End</h4>
         <div className={styles.list}>
           <Item
             name={'React Admin System'}
@@ -29,22 +31,47 @@ function Project() {
             repo={'https://github.com/lesenelir/meta-baidu'}
           />
           <Item
-            name={'Cats Classifier'}
-            description={'The classification of four cat-kinds with cnn and Django'}
-            icon='&#xe62c;'
-            repo={'https://github.com/lesenelir/Django-Cats-Classifier'}
+            name={'Mini React'}
+            // description={'Build my own mini react'}
+            description={'Build mini react by building your own react'}
+            icon='&#xe64b;'
+            repo={'https://github.com/lesenelir/mini-react'}
           />
+        </div>
+
+        <h4 className={styles.h4Title}>Web3</h4>
+        <div className={styles.list}>
           <Item
             name={'LearnWeb3'}
             description={'Some example practices from LearnWeb3 DAO'}
             icon='&#xe6fd;'
             repo={'https://github.com/lesenelir/meta-learnweb3-dao-projects'}
           />
+        </div>
+
+        <h4 className={styles.h4Title}>Deep Learning</h4>
+        <div className={styles.list}>
+          <Item
+            name={'Cats Classifier'}
+            description={'The classification of four cat-kinds with cnn and Django'}
+            icon='&#xe62c;'
+            repo={'https://github.com/lesenelir/Django-Cats-Classifier'}
+          />
+        </div>
+
+        <h4 className={styles.h4Title}>Others</h4>
+        <div className={styles.list}>
           <Item
             name={'LeetCode'}
             description={'JavaScript solutions for Personal Leetcode problems'}
             icon='&#xebf2;'
             repo={'https://github.com/lesenelir/meta-leetcode-js'}
+          />
+          <Item
+            name={'Javascript Unit Test'}
+            description={'Just learn how to write unit test in javascript'}
+            icon='&#xe606;'
+            repo={'https://github.com/lesenelir/javascript-unit-test'}
           />
         </div>
         <Footer/>

@@ -4,7 +4,6 @@
 }
 
 .title {
-  /*color: #000000;*/
   color: var(--surfaceStrong);
 }
 
@@ -15,17 +14,31 @@
 
 .list {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 10px 10px 0 ;
+  row-gap: 20px;
+}
+
+.h4Title {
+  color: var(--surfaceMain);
+  font-weight: 700;
+  margin-bottom: 0;
 }
 
 /* Item 样式 */
 .item {
+  width: 360px;
+  /*规定Item的宽高，此处设置高度，根据description设置两行的高度*/
+  /*如果后续description有三行则需要重新考虑该height值*/
+  /*但不建议description超过两行*/
+  height: 100px;
   display: flex;
   align-items: center;
   gap: 20px;
+  padding: 8px;
   transition: 0.3s;
-  margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 .icon {
@@ -44,6 +57,7 @@
 .description {
   margin-top: -10px;
   font-size: 14px;
+  line-height: 22px;
   color: rgba(125, 125, 125, .6);
   transition: 0.3s;
 }
@@ -55,7 +69,6 @@
 }
 
 .item:hover .name {
-  /*color: black;*/
   color: var(--surfaceStrong);
   transition: 0.3s;
 }
