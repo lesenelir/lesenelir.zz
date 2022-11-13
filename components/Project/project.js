@@ -53,7 +53,7 @@ function Project() {
         <div className={styles.list}>
           <Item
             name={'Cats Classifier'}
-            description={'The classification of four cat-kinds with cnn and Django'}
+            description={'The classification of four cat-kinds with CNN and Django'}
             icon='&#xe62c;'
             repo={'https://github.com/lesenelir/Django-Cats-Classifier'}
           />

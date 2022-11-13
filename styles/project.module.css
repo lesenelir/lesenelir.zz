@@ -1,7 +1,7 @@
 .container {
   display: flex;
   justify-content: center;
-  max-width: 710px;
+  max-width: 700px;
   margin: auto;
 }
 
@@ -36,7 +36,7 @@
   /*BUG: 如果mobile尺寸特别小，宽不够360px，则不会显示item*/
   /*width: 360px;*/
   /*height: 100px;*/
-  max-width: 300px;
+  max-width: 310px;
   max-height: 100px;
   display: flex;
   align-items: center;
@@ -64,6 +64,8 @@
   font-size: 14px;
   line-height: 22px;
   color: rgba(125, 125, 125, .6);
+  /*color: #000000;*/
+  /*opacity: .4;*/
   transition: 0.3s;
 }
 
@@ -80,6 +82,7 @@
 
 .item:hover .description {
   color: rgba(125, 125, 125);
+  /*opacity: .6;*/
   transition: 0.3s;
 }
 
