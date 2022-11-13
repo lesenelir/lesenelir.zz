@@ -1,6 +1,8 @@
 .container {
   display: flex;
   justify-content: center;
+  max-width: 700px;
+  margin: auto;
 }
 
 .title {
@@ -16,23 +18,26 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 10px 10px 10px 0 ;
+  padding-top: 4px;
   row-gap: 20px;
 }
 
 .h4Title {
   color: var(--surfaceMain);
   font-weight: 700;
-  margin-bottom: 0;
+  /*margin-bottom: 0;*/
 }
 
 /* Item 样式 */
 .item {
-  width: 360px;
   /*规定Item的宽高，此处设置高度，根据description设置两行的高度*/
   /*如果后续description有三行则需要重新考虑该height值*/
   /*但不建议description超过两行*/
-  height: 100px;
+  /*BUG: 如果mobile尺寸特别小，宽不够360px，则不会显示item*/
+  /*width: 360px;*/
+  /*height: 100px;*/
+  max-width: 300px;
+  max-height: 100px;
   display: flex;
   align-items: center;
   gap: 20px;
