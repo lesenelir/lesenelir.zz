@@ -13,8 +13,14 @@ function Home() {
             Hi, I am Lesenelir Zhou, a web developer.{' '}
             Studying at Jinan University, majoring in Computer Science.
           </p>
+          {/*<p>*/}
+          {/*  The current focus is building more projects, based on the React ecosystem.*/}
+          {/*</p>*/}
           <p>
-            The current focus is building more projects, based on the React ecosystem.
+            The current focus is on learning front-end knowledge, blockchain and building more projects based
+          </p>
+          <p>
+            on the React ecosystem.
           </p>
         </article>
         <Divider/>
@@ -39,7 +45,7 @@ function Home() {
             {' '} repositories and some online pages.
           </p>
           <p>
-            Some of my projects: React admin system | Flex-Baidu
+            Some of my projects: react admin system | web portfolio | mini react | flex baidu
           </p>
         </article>
         <Divider/>
