@@ -39,6 +39,7 @@ a {
 .layout[color-mode='light'] {
   --surfaceMain: #555555;  /* Deep Gray */
   --surfaceSub: #7D7D7D;   /* Light Gray */
+  --surfaceNavbar: #374151;
   --surfaceStrong: #000000;
   --surfaceBackground: #ffffff;
   --surfaceCodeBlock: #F8F8F8;
@@ -47,6 +48,7 @@ a {
 .layout[color-mode='dark'] {
   --surfaceMain: #BBBBBB;
   --surfaceSub: #E5E7EB;
+  --surfaceNavbar: #E5E7EB;
   --surfaceStrong: #ffffff;
   --surfaceBackground: #000000;
   --surfaceCodeBlock: #4b4b4b;

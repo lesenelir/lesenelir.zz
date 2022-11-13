@@ -46,6 +46,15 @@ function Navbar(props) {
         <Link href={`/timeline`}>
           <a className={`${styles.link} ${styles.pc}`}>Timeline</a>
         </Link>
+        <Link href='https://twitter.com/lesenelir'>
+          <a
+            rel='noreferrer'
+            target='_blank'
+            className={`iconfont ${styles.icon} ${styles.link} ${styles.pc}`}
+          >
+            &#xe646;
+          </a>
+        </Link>
 
         {/*Default Icon*/}
         <a
@@ -54,12 +63,12 @@ function Navbar(props) {
           target='_blank'
           className={`iconfont ${styles.icon}`}
         >
-          &#xe732;
+          &#xe799;
         </a>
         {
           theme === 'light' ? (
             <span className={`iconfont ${styles.icon}`} onClick={changeTheme}>
-              &#xe64c;
+              &#xe642;
             </span>
           ) : (
             <span className={`iconfont ${styles.icon}`} onClick={changeTheme}>
