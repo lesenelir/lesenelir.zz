@@ -46,6 +46,15 @@ function Navbar(props) {
         <Link href={`/timeline`}>
           <a className={`${styles.link} ${styles.pc}`}>Timeline</a>
         </Link>
+        <Link href='https://mirror.xyz/lesenelir.eth'>
+          <a
+            rel='noreferrer'
+            target='_blank'
+            className={`iconfont ${styles.icon} ${styles.link} ${styles.pc}`}
+          >
+            &#xec4a;
+          </a>
+        </Link>
         <Link href='https://twitter.com/lesenelir'>
           <a
             rel='noreferrer'
