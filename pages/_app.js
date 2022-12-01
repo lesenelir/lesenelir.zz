@@ -1,4 +1,4 @@
-import {Analytics} from "@vercel/analytics/dist/react"
+import {Analytics} from '@vercel/analytics/react'
 
 import '../styles/globals.css'
 import '../styles/md.css'
