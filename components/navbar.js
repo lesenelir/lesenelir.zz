@@ -52,7 +52,7 @@ function Navbar(props) {
             target='_blank'
             className={`iconfont ${styles.icon} ${styles.link} ${styles.pc}`}
           >
-            &#xec4a;
+            &#xec48;
           </a>
         </Link>
         <Link href='https://twitter.com/lesenelir'>
