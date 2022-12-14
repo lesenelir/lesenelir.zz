@@ -43,6 +43,7 @@ a {
   --surfaceStrong: #000000;
   --surfaceBackground: #ffffff;
   --surfaceCodeBlock: #F8F8F8;
+  --surfaceBtnBackground: #EFEFEF;
 }
 
 .layout[color-mode='dark'] {
@@ -52,6 +53,7 @@ a {
   --surfaceStrong: #ffffff;
   --surfaceBackground: #000000;
   --surfaceCodeBlock: #4b4b4b;
+  --surfaceBtnBackground: #212121;
 }
 
 @media (prefers-color-scheme: dark) {
