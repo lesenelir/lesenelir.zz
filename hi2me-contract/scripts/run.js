@@ -1,17 +1,20 @@
 const hre = require("hardhat")
 
 const main = async () => {
-  const [deployer] = await hre.ethers.getSigners()
-  const accountBalance = await deployer.getBalance()
-
-  console.log("Deploying contracts with account: ", deployer.address)
-  console.log("Account balance: ", accountBalance.toString())
-
+  const [owner, randomPerson] = await hre.ethers.getSigners()
   const waveContractFactory = await hre.ethers.getContractFactory("WavePortal")
   const waveContract = await waveContractFactory.deploy()
-  await waveContract.deployed()
+  await waveContract.deployed();
 
-  console.log("WavePortal address: ", waveContract.address)
+  console.log("Contract deployed to:", waveContract.address)
+  console.log("Contract deployed by:", owner.address)
+
+  await waveContract.getTotalWaves()
+
+  const waveTxn = await waveContract.wave()
+  await waveTxn.wait()
+
+  await waveContract.getTotalWaves()
 }
 
 const runMain = async () => {
