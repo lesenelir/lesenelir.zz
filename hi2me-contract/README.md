@@ -39,3 +39,10 @@ Deploying contracts with account:  0xd69220df4d1Cbe442b2Da76221dDe67F3cDEB21d
 Account balance:  2015326627831858058
 WavePortal address:  0x65801DE1bD76737e8F683DF6baDE47d25A17ae65
 
+
+Last deploy in the goerli 15 minutes
+Fifth deploy to goerli:
+Deploying contracts with account:  0xd69220df4d1Cbe442b2Da76221dDe67F3cDEB21d
+Account balance:  2449884253795602526
+WavePortal address:  0xFC01F818A07F67A1514144f047d94FBC92b274A5
+
