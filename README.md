@@ -17,6 +17,7 @@ This project is a portfolio website built with nextjs.
 - [x] use canvas to animate the background of the all pages
 - [x] static site generation with data
 - [x] add mobile support
+- [x] add hi2me page to interacte with the goerli network
 
 ## Run and Deploy
 
@@ -56,6 +57,10 @@ You can deploy your github repo project on vercel and use custom domains.
 - Dark Theme
 
 ![Dark](https://raw.githubusercontent.com/lesenelir/meta-portfolio/master/docs-imgs/dark2.png)
+
+- Hi2Me Page
+
+![hi2me](https://raw.githubusercontent.com/lesenelir/meta-portfolio/master/docs-imgs/hi2me.png)
 
 ## Browser Support
 
