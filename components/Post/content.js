@@ -1,8 +1,8 @@
 import Item from "./item"
+import Cd from "../cd"
 import Footer from "../footer"
 
 import styles from '../../styles/posts.module.css'
-import Cd from "../cd";
 
 function Content(props) {
   const {allPosts} = props

@@ -12,7 +12,9 @@ import {getAllPostIds, getPostDataById} from "../../lib/postsTool"
 import styles from '../../styles/markdown.module.css'
 
 function Post(props) {
+  // get post content by props.postData
   const {postData} = props
+
   useEffect(() => {
     hljs.registerLanguage("jsx", javascript)
     hljs.highlightAll();
@@ -25,15 +27,15 @@ function Post(props) {
       </Head>
 
       <Layout>
-        {/*<div className={styles.container}>*/}
-        <h1 className={styles.title}>{postData.title}</h1>
-        <Date dateString={postData.date} className={styles.date}/>
-        <article className='md'>
-          <div dangerouslySetInnerHTML={{__html: postData.contentHtml}}/>
-        </article>
-        <Cd/>
-        <Footer/>
-        {/*</div>*/}
+        <div className={styles.container}>
+          <h1 className={styles.title}>{postData.title}</h1>
+          <Date dateString={postData.date}/>
+          <article className='md'>
+            <div dangerouslySetInnerHTML={{__html: postData.contentHtml}}/>
+          </article>
+          <Cd/>
+          <Footer/>
+        </div>
       </Layout>
     </>
   )

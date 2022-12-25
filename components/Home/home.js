@@ -84,10 +84,10 @@ function Home() {
           <p>
             Outside of programming, I enjoy watching movies.{' '}
             {/*I hope to study directing at NYU one day.*/}
-            My dream is to study directing at NYU one day, and
+            My dream is to study directing at NYU one day,
           </p>
           <p>
-            become a new generation of leading Chinese directors.
+            and become a new generation of leading Chinese directors.
           </p>
         </article>
         <Divider/>
