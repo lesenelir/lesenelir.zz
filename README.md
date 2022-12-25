@@ -1,6 +1,6 @@
 # meta-portfolio 💨
 
-My portfolio blog website built with next.js and was inspired by antfu's blog. Keeping Building~~
+My portfolio blog website built with next.js, inspired by antfu's blog. Keeping Building~~
 
 ---
 
