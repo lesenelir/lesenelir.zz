@@ -29,6 +29,13 @@
   margin-top: -8px;
 }
 
+.duration {
+  font-size: 14px;
+  color: rgba(125, 125, 125, .5);
+  transition: 0.3s;
+  margin-top: -8px;
+}
+
 .itemContainer:hover .title {
   color: var(--surfaceStrong);
 }
