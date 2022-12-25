@@ -69,14 +69,15 @@ function Navbar(props) {
         </Link>
 
         {/*Default Icon*/}
-        <a
-          href='https://github.com/lesenelir'
-          rel='noreferrer'
-          target='_blank'
-          className={`iconfont ${styles.icon}`}
-        >
-          &#xe799;
-        </a>
+        <Link href='https://github.com/lesenelir'>
+          <a
+            rel='noreferrer'
+            target='_blank'
+            className={`iconfont ${styles.icon}`}
+          >
+            &#xe799;
+          </a>
+        </Link>
         {
           theme === 'light' ? (
             <span className={`iconfont ${styles.icon}`} onClick={changeTheme}>
