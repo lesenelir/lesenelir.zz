@@ -6,6 +6,8 @@
 
 .name {
   color: var(--surfaceStrong);
+  font-size: 36px;
+  font-weight: 800;
 }
 
 .link {
