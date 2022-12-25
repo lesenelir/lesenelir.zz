@@ -49,7 +49,6 @@
 }
 
 .md code {
-  display: block;
   overflow-x: auto;
   /*TODO*/
   background-color: var(--surfaceCodeBlock);
