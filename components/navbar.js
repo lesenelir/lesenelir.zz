@@ -38,7 +38,7 @@ function Navbar(props) {
           <a className={`${styles.link} ${styles.pc}`}>Home</a>
         </Link>
         <Link href={`/posts`}>
-          <a className={`${styles.link} ${styles.pc}`}>Blog</a>
+          <a className={`${styles.link} ${styles.pc}`}>Posts</a>
         </Link>
         <Link href={`/projects`}>
           <a className={`${styles.link} ${styles.pc}`}>Projects</a>
