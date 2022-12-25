@@ -57,6 +57,14 @@
   border-radius: 5px;
 }
 
+.md hr {
+  width: 50%;
+  height: 1px;
+  margin: 38px auto;
+  border: none;
+  background-color: rgba(125, 125, 125, .3);
+}
+
 .md p img {
   max-width: 100%;
   margin: 5px 0;
