@@ -39,11 +39,11 @@ npm i
 npm run dev
 ```
 
-- Deploy 
+- Deploy
 
 > My blog is deployed on the vercel platform
 
-If you need to deploy your website to a production environment, I highly recommend you to use the [vercel](https://vercel.com/dashboard) platform.
+If you want to deploy your website to a production environment, I highly recommend you to use the [vercel](https://vercel.com/dashboard) platform.
 
 You can deploy your github repo project on vercel and use custom domains.
 
