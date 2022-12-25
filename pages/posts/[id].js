@@ -3,6 +3,7 @@ import Head from "next/head"
 import Layout from "../../components/layout"
 import Footer from "../../components/footer"
 import Date from "../../components/date"
+import Cd from "../../components/cd"
 import "highlight.js/styles/lioshi.css"
 import hljs from "highlight.js/lib/core"
 import javascript from "highlight.js/lib/languages/javascript"
@@ -30,6 +31,7 @@ function Post(props) {
         <article className='md'>
           <div dangerouslySetInnerHTML={{__html: postData.contentHtml}}/>
         </article>
+        <Cd/>
         <Footer/>
         {/*</div>*/}
       </Layout>

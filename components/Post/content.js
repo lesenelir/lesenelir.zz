@@ -2,6 +2,7 @@ import Item from "./item"
 import Footer from "../footer"
 
 import styles from '../../styles/posts.module.css'
+import Cd from "../cd";
 
 function Content(props) {
   const {allPosts} = props
@@ -35,6 +36,7 @@ function Content(props) {
             />
           ))
         }
+        <Cd/>
         <Footer/>
       </div>
     </div>

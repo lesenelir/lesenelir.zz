@@ -1,6 +1,7 @@
 import Layout from "../../components/layout"
 import Footer from "../../components/footer"
 import {getTimePost} from "../../lib/timeTool"
+import Cd from "../../components/cd"
 
 import styles from '../../styles/timeline.module.css'
 
@@ -16,6 +17,7 @@ function TimelinePage(props) {
             <article className='md'>
               <div dangerouslySetInnerHTML={{__html: timelineData.contentHtml}}/>
             </article>
+            <Cd/>
             <Footer/>
           </div>
         </div>

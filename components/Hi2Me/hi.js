@@ -1,9 +1,12 @@
 import {useEffect, useState} from "react"
 import {ethers} from "ethers"
 import Loader from "../Loading/loader"
+import Footer from "../footer"
+import Cd from "../cd"
 import abi from '../../lib/WavePortal.json'
 
 import styles from '../../styles/hi.module.css'
+
 
 const getEthereumObject = () => window.ethereum
 
@@ -205,6 +208,8 @@ function Hi() {
             </div>
           </div>
         ))}
+        <Cd/>
+        <Footer/>
       </div>
     </div>
   )

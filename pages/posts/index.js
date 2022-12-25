@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Layout from "../../components/layout"
 import Content from "../../components/Post/content"
+import Cd from "../../components/cd"
 
 import {getSortedPostsData} from "../../lib/postsTool"
 

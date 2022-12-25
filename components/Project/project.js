@@ -1,5 +1,6 @@
 import Footer from "../footer"
 import Item from "./item"
+import Cd from "../cd"
 
 import styles from '../../styles/project.module.css'
 
@@ -74,6 +75,7 @@ function Project() {
             repo={'https://github.com/lesenelir/javascript-unit-test'}
           />
         </div>
+        <Cd/>
         <Footer/>
       </div>
     </div>
