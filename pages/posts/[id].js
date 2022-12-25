@@ -2,7 +2,6 @@ import {useEffect} from "react"
 import Head from "next/head"
 import Layout from "../../components/layout"
 import Footer from "../../components/footer"
-// import Date from "../../components/date"
 import SubTitle from "../../components/subTitle"
 import Cd from "../../components/cd"
 import "highlight.js/styles/lioshi.css"
@@ -30,8 +29,6 @@ function Post(props) {
       <Layout>
         <div className={styles.container}>
           <h1 className={styles.title}>{postData.title}</h1>
-          {/*<Date dateString={postData.date}/>*/}
-          {/*<span style={{opacity: '50%', fontSize: '16px'}}>{postData.duration}</span>*/}
           <SubTitle
             dateString={postData.date}
             duration={postData.duration}
