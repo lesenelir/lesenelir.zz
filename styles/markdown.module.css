@@ -3,6 +3,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /*添加marginLeft，视觉上更加居中*/
+  /*不添加marginLeft，是最居中的*/
+  margin-left: 120px;
 }
 
 .title {
