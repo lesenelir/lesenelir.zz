@@ -71,7 +71,7 @@
 }
 
 .md a {
-  color: #000000;
+  color: var(--surfaceStrong);
   border-bottom: 1px solid rgba(125,125,125,.3);
   transition: border .3s ease-in-out;
 }
