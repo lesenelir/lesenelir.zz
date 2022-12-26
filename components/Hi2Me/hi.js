@@ -93,6 +93,16 @@ function Hi() {
 
   const wave = async () => {
     try {
+      if (!currentAccount) {
+        alert('pls connect wallet first')
+        return
+      }
+
+      if (message === '') {
+        alert('pls input value first')
+        return
+      }
+
       const {ethereum} = window
       if (ethereum) {
         const provider = new ethers.providers.Web3Provider(ethereum)
