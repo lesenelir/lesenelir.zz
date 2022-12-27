@@ -49,6 +49,10 @@
 }
 
 .md code {
+  /*pre有一个padding是36px，此处设置margin-top:-36px为了让代码块上移一点距离保持行间距正常*/
+  /*margin-top: -36px;*/
+  font-size: 14px;
+  /*以下代码是正常的*/
   overflow-x: auto;
   /*TODO*/
   background-color: var(--surfaceCodeBlock);

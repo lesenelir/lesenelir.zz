@@ -15,9 +15,9 @@ function Content(props) {
   return (
     <div className={styles.container}>
       <div>
-        <p className={styles.year}>2022</p>
+        <p className={styles.year}>2023</p>
         {
-          getPostsByYear('2022').map(post => (
+          getPostsByYear('2023').map(post => (
             <Item
               id={post.id}
               title={post.title}
@@ -27,9 +27,9 @@ function Content(props) {
             />
           ))
         }
-        <p className={styles.year}>2021</p>
+        <p className={styles.year}>2022</p>
         {
-          getPostsByYear('2021').map(post => (
+          getPostsByYear('2022').map(post => (
             <Item
               id={post.id}
               title={post.title}

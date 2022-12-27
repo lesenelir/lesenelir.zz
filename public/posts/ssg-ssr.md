@@ -1,7 +1,10 @@
 ---
-title: 'When to Use Static Generation v.s. Server-side Rendering'
-date: '2021-01-02'
-duration: '1min'
+title: 'Two Forms of Pre-rendering'
+date: '2022-10-02'
+duration: '3min'
+---
+>Extracts from the official Nextjs website
+
 ---
 
 We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
@@ -19,4 +22,11 @@ On the other hand, Static Generation is **not** a good idea if you cannot pre-re
 
 In that case, you can use **Server-Side Rendering**. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate data.
 
+
+Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
+
+- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
+- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
+
+Importantly, Next.js let's you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
 
