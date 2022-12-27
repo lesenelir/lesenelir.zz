@@ -52,7 +52,7 @@ function Home() {
 
         <article>
           <p>
-            At the same time, I am also interested in web3. Learning the basics of web3 knowledge and contract
+            GM! At the same time, I am also interested in web3. Learning the basics of web3 knowledge and contract
           </p>
           <p>
             development from {' '}
@@ -64,7 +64,7 @@ function Home() {
             >
               LearnWeb3 DAO.
             </a>
-            {' '} I will write some articles from my thinking in Chinese on mirror.
+            {' '} I write some articles from my thinking in Chinese on mirror.
           </p>
           <p>
             You can find me on mirror by {' '}

@@ -6,7 +6,7 @@ import styles from '../../styles/posts.module.css'
 
 function Content(props) {
   const {allPosts} = props
-  console.log(allPosts)
+  // console.log(allPosts)
 
   const getPostsByYear = (year) => {
     return allPosts.filter(post => post.date.includes(year))
