@@ -12,6 +12,7 @@ duration: '20min'
 ### 函数调用栈
 
 首先阅读以下代码块：
+
 ```js
 function A() {
   console.log('A Start')
