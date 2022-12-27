@@ -52,7 +52,7 @@ function Home() {
 
         <article>
           <p>
-            GM! At the same time, I am also interested in web3. Learning the basics of web3 knowledge and contract
+            At the same time, I am also interested in web3. Learning the basics of web3 knowledge and contract
           </p>
           <p>
             development from {' '}
