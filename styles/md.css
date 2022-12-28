@@ -74,6 +74,11 @@
   margin: 5px 0;
 }
 
+/*.md img {*/
+/*  border: 20px solid red;*/
+/*  margin: 0 auto;*/
+/*}*/
+
 .md a {
   color: var(--surfaceStrong);
   border-bottom: 1px solid rgba(125,125,125,.3);
