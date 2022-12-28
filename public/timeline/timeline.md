@@ -25,5 +25,5 @@ date: '2020-06-08'
 - COVID-19 massive outbreak in spring, **Quzhou, Shanghai, etc**.
 - Systematically start learning Front-end & Blockchain & Ethereum
 - There have been campaigns to against the epidemic policy in Chinese universities
-- Keep Learning and Building
+- Keep Learning & Keep Building
 
