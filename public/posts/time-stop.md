@@ -3,7 +3,8 @@ title: '时间已经停止，剩下就是慢慢变老'
 date: '2022-11-18'
 duration: '10min'
 ---
-![](https://raw.githubusercontent.com/lesenelir/lesenelir.me/master/public/images/time-stop-1.png)
+
+[comment]: <> (![]&#40;https://raw.githubusercontent.com/lesenelir/lesenelir.me/master/public/images/time-stop-1.png&#41;)
 
 > 这是一篇我最早发在Mirror平台上的一篇文章
 > 
