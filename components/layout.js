@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react"
+import {useRouter} from "next/router"
 import Head from "next/head"
 import Navbar from "./navbar"
 import Plum from "./plum"
@@ -9,6 +10,7 @@ export const siteName = 'Lesenelir Zhou'
 
 function Layout(props) {
   const [theme, setTheme] = useState('light')
+  const router = useRouter()
 
   // theme change Effect
   useEffect(() => {
@@ -31,7 +33,8 @@ function Layout(props) {
       <div className={styles.container}>
         {props.children}
       </div>
-      <Plum/>
+      {router.pathname !== '/posts/[id]' && <Plum/>}
+      {/*<Plum/>*/}
     </div>
   )
 }
