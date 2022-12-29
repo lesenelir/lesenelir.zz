@@ -12,18 +12,20 @@ date: '2020-06-08'
 - Preparing for the Graduate School Entrance Exams from August to December
 
 ### 2020
-- COVID-19 virus outbreak, **we will miss you Dr. Lee**
-- The most comfortable time for me
-- Begin graduate school career in September, majoring in computer science
+- **In memorial of Dr. LI Wenliang,** who sounded the alarm on COVID-19
+- Starting postgraduate career in September, majoring in computer science
+- One of the most enjoyable years of my life
 
 ### 2021
 - COVID-19 outbreak continues
-- Kalista awakening my mind, and taking the pill just like Neo
-- In December wanted to be a Web3 builder in the future
+- Kalista awakening my mind, and taking the pill like Neo
+- In December, wanted to be a Web3 builder in the future
 
 ### 2022
-- COVID-19 massive outbreak in spring, **Quzhou, Shanghai, etc**.
+- COVID-19 massive outbreak in spring, **Quzhou, Shanghai, Urumqi, etc**.
 - Systematically start learning Front-end & Blockchain & Ethereum
 - There have been campaigns to against the epidemic policy in Chinese universities
 - Keep Learning & Keep Building
 
+### 2023
+- Start relearning English in my spare time
