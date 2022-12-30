@@ -20,22 +20,24 @@ function Layout(props) {
   }, [])
 
   return (
-    <div className='layout' color-mode={theme}>
+    <>
       <Head>
         <title>{siteName}</title>
         <meta name="description" content="Lesenelir's Blog built by Next.js"/>
         <link rel="icon" href={`/favicon.ico`}/>
       </Head>
 
-      {/* All Pages Layout Component */}
-      {/*<Animation/>*/}
-      <Navbar theme={theme} setTheme={setTheme}/>
-      <div className={styles.container}>
-        {props.children}
+      <div className='layout' color-mode={theme}>
+        {/* All Pages Layout Component */}
+        {/*<Animation/>*/}
+        <Navbar theme={theme} setTheme={setTheme}/>
+        <div className={styles.container}>
+          {props.children}
+        </div>
+        {router.pathname !== '/posts/[id]' && <Plum/>}
+        {/*<Plum/>*/}
       </div>
-      {router.pathname !== '/posts/[id]' && <Plum/>}
-      {/*<Plum/>*/}
-    </div>
+    </>
   )
 }
 
