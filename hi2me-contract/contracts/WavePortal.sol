@@ -31,7 +31,7 @@ contract WavePortal {
     function wave(string memory _message) public {
         // make sure the current timestamp is at least 10-minutes bigger than the last timestamp we stored
         require(
-            lastWavedAt[msg.sender] + 10 minutes < block.timestamp,
+            lastWavedAt[msg.sender] + 5 minutes < block.timestamp,
             "Wait 10 minutes"
         );
         // update the current timestamp we have for the user
@@ -49,7 +49,7 @@ contract WavePortal {
         if (seed <= 50) {
             console.log("%s won !", msg.sender);
 
-            uint256 prizeAmount = 0.0001 ether;
+            uint256 prizeAmount = 0.001 ether;
             require(prizeAmount <= address(this).balance, "Trying to withdraw more money than the contract has");
             (bool success, ) = (msg.sender).call{value: prizeAmount}("");
             require(success, "Failed to withdraw money from contract");

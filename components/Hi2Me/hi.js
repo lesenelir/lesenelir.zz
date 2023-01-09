@@ -16,7 +16,7 @@ function Hi() {
   const [message, setMessage] = useState('')
   const [isLoading, setIsLoading] = useState(false)
 
-  const contractAddress = '0xFC01F818A07F67A1514144f047d94FBC92b274A5'
+  const contractAddress = '0x52c9c95F4B239B6F818a0C7ECA5fcB650D859299'
   const contractABI = abi.abi
 
   const getAllWaves = async () => {
@@ -165,7 +165,7 @@ function Hi() {
           <p>
             All data will be stored {' '}
             <a
-              href="https://goerli.etherscan.io/address/0xFC01F818A07F67A1514144f047d94FBC92b274A5"
+              href="https://goerli.etherscan.io/address/0x52c9c95F4B239B6F818a0C7ECA5fcB650D859299"
               rel='noreferrer'
               target='_blank'
               className={styles.link}

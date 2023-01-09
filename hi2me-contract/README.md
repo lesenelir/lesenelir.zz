@@ -46,3 +46,10 @@ Deploying contracts with account:  0xd69220df4d1Cbe442b2Da76221dDe67F3cDEB21d
 Account balance:  2449884253795602526
 WavePortal address:  0xFC01F818A07F67A1514144f047d94FBC92b274A5
 
+
+$ npx hardhat run scripts/deploy.js --network goerli
+Compiled 1 Solidity file successfully
+Deploying contracts with account:  0xd69220df4d1Cbe442b2Da76221dDe67F3cDEB21d
+Account balance:  10903924251341604584
+WavePortal address:  0x52c9c95F4B239B6F818a0C7ECA5fcB650D859299
+
