@@ -17,7 +17,7 @@ This project is a portfolio website built with nextjs.
 - [x] use canvas to animate the background of the all pages
 - [x] static site generation with data
 - [x] add mobile support
-- [x] add hi2me page to interacte with the goerli network
+- [x] hi2me message board dApp store message to the goerli network
 
 ## Run and Deploy
 
