@@ -44,6 +44,7 @@
 
 .md blockquote {
   padding: 0 16px;
+  opacity: 0.7;
   margin-left: 0;
   border-left: 4px solid var(--surfaceSub);
 }
@@ -81,7 +82,7 @@
 
 .md a {
   color: var(--surfaceStrong);
-  border-bottom: 1px solid rgba(125,125,125,.3);
+  border-bottom: 1px solid rgba(125,125,125,.5);
   transition: border .3s ease-in-out;
 }
 
