@@ -2,7 +2,6 @@
 title: 'How to become a web developer'
 date: '2022-12-31'
 duration: '6min'
-
 ---
 
 Today is the last day of 2022, and I have spent a lot of time in coding over the past year.
