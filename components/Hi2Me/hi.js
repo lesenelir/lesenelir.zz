@@ -128,6 +128,9 @@ function Hi() {
 
         // getAllWaves after connect wallet
         await getAllWaves()
+
+        // setMessage empty
+        setMessage('')
       } else {
         console.log("Ethereum object doesn't exist!")
       }
