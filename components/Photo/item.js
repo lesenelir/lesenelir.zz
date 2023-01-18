@@ -20,21 +20,21 @@ const images = [
   },
   {
     date: '2022-11-30',
-    src: '/photos/2022-11-30/01.jpg',
+    src: '/photos/2022-11-30/03.jpg',
     width: 200,
     height: 200,
     alt: '2022-11-30_03'
   },
   {
     date: '2022-11-30',
-    src: '/photos/2022-11-30/04.JPG',
+    src: '/photos/2022-11-30/04.jpg',
     width: 200,
     height: 200,
     alt: '2022-11-30_04'
   },
   {
     date: '2022-11-30',
-    src: '/photos/2022-11-30/05.JPG',
+    src: '/photos/2022-11-30/05.jpg',
     width: 200,
     height: 200,
     alt: '2022-11-30_05'
