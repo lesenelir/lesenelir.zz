@@ -1,0 +1,9 @@
+.date {
+  color: var(--surfaceMain);
+  font-weight: 500;
+  margin: 24px 0 8px 0;
+}
+
+.pic:hover {
+  cursor: pointer;
+}
