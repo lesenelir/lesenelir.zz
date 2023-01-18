@@ -54,13 +54,6 @@ const images = [
     height: 650,
     alt: '2022-11-28_01'
   },
-  {
-    date: '2022-11-28',
-    src: '/photos/2022-11-28/02.jpg',
-    width: 1048,
-    height: 650,
-    alt: '2022-11-28_02'
-  },
 
   {
     date: '2022-03-04',
@@ -118,7 +111,7 @@ const images = [
     date: '2021-01-28',
     src: '/photos/2021-01-28/01.jpg',
     width: 1048,
-    height: 800,
+    height: 780,
     alt: '2021-01-28_01'
   }
 ]
