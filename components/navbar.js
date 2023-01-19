@@ -43,7 +43,7 @@ function Navbar(props) {
         <Link href={`/projects`}>
           <a className={`${styles.link} ${styles.pc}`}>Projects</a>
         </Link>
-        <Link href={`photos`}>
+        <Link href={`/photos`}>
           <a className={`${styles.link} ${styles.pc}`}>Photos</a>
         </Link>
         <Link href={`/timeline`}>
