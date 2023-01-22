@@ -116,11 +116,14 @@ const images = [
   }
 ]
 
+interface Props {
+  currentDate: string
+}
 
-function Item(props) {
+function Item(props: Props): JSX.Element {
   const {currentDate} = props
 
-  const getPhotosByDate = (date) => {
+  const getPhotosByDate = (date: string) => {
     return images.filter(photo => photo.date.includes(date))
   }
 

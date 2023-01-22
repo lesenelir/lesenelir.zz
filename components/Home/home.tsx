@@ -3,7 +3,7 @@ import Footer from "../footer"
 
 import styles from '../../styles/home.module.css'
 
-function Home() {
+function Home(): JSX.Element {
   return (
     <div className={styles.container}>
       <div>

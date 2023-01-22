@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react"
-import {useRouter} from "next/router"
+import {NextRouter, useRouter} from "next/router"
 import Head from "next/head"
 import Navbar from "./navbar"
 import Plum from "./plum"
@@ -8,9 +8,13 @@ import styles from '../styles/layout.module.css'
 
 export const siteName = 'Lesenelir Zhou'
 
-function Layout(props) {
-  const [theme, setTheme] = useState('light')
-  const router = useRouter()
+interface Props {
+  children: JSX.Element
+}
+
+function Layout(props: Props): JSX.Element {
+  const [theme, setTheme] = useState<string>('light')
+  const router: NextRouter = useRouter()
 
   // theme change Effect
   useEffect(() => {

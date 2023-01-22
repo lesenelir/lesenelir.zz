@@ -32,6 +32,8 @@
     "unified": "^10.1.2"
   },
   "devDependencies": {
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.27",
     "eslint": "8.23.1",
     "eslint-config-next": "12.3.1"
   }

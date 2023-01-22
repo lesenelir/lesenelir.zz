@@ -1,6 +1,6 @@
 import styles from '../styles/footer.module.css'
 
-function Footer() {
+function Footer():JSX.Element {
   return (
     <div className={styles.container}>
       <p>

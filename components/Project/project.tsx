@@ -4,7 +4,7 @@ import Cd from "../cd"
 
 import styles from '../../styles/project.module.css'
 
-function Project() {
+function Project(): JSX.Element {
   return (
     <div className={styles.container}>
       <div>

@@ -13,7 +13,7 @@ async function getTimePost() {
     encoding: 'utf-8'
   })
 
-  const matterResult = matter(file)
+  const matterResult: matter.GrayMatterFile<string> = matter(file)
 
   const fileContent = await unified()
     .use(remarkParse)
@@ -21,6 +21,7 @@ async function getTimePost() {
     .use(rehypeSanitize)
     .use(rehypeStringify)
     .process(matterResult.content)
+
   const contentHtml = fileContent.value
 
   return {

@@ -1,9 +1,14 @@
 import {parseISO, format} from 'date-fns'
 
-function SubTitle(props) {
+interface Props {
+  dateString: string,
+  duration: string
+}
+
+function SubTitle(props: Props) {
   const {dateString, duration} = props
 
-  const date = parseISO(dateString)
+  const date: Date = parseISO(dateString)
   // console.log(dateString) // 2022-12-25
   // console.log(date) // Sun Dec 25 2022 00:00:00 GMT+0800 (China Standard Time)
 

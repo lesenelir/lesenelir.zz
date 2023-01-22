@@ -19,10 +19,11 @@ async function getSortedPostsData() {
     const fullPath = path.join(postsDirectory, fileName)
     const fileContents = fs.readFileSync(fullPath, 'utf-8')
 
-    const matterResult = matter(fileContents)
+    const matterResult: matter.GrayMatterFile<string> = matter(fileContents)
+
     return {
       id,
-      ...matterResult.data
+      ...(matterResult.data as {title: string, date: string, duration: string} )
     }
   })
   // allPostsData
@@ -75,13 +76,13 @@ async function getAllPostIds() {
   })
 }
 
-async function getPostDataById(id) {
+async function getPostDataById(id: string) {
   const fullPath = path.join(process.cwd(), 'public', 'posts', `${id}.md`)
   const fileContents = await fsPromises.readFile(fullPath, {
     encoding: 'utf-8'
   })
   // Use gray-matter to parse the post metadata section
-  const matterResult = matter(fileContents) // .md metadata
+  const matterResult: matter.GrayMatterFile<string> = matter(fileContents) // .md metadata
 
   // Use remark to convert markdown into HTML string
   const fileContent = await unified()
@@ -90,6 +91,7 @@ async function getPostDataById(id) {
     .use(rehypeSanitize)
     .use(rehypeStringify)
     .process(matterResult.content)
+
   const contentHtml = fileContent.value
 
   return {

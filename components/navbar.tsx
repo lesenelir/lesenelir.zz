@@ -1,8 +1,14 @@
+import {Dispatch, SetStateAction} from "react"
 import Link from "next/link"
 
 import styles from '../styles/navbar.module.css'
 
-function Navbar(props) {
+interface Props {
+  theme: string,
+  setTheme: Dispatch<SetStateAction<string>>
+}
+
+function Navbar(props: Props) {
   const {theme, setTheme} = props
 
   const changeTheme = () => {

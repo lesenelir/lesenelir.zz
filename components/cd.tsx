@@ -1,10 +1,9 @@
-import {useRouter} from "next/router"
+import {NextRouter, useRouter} from "next/router"
 
 import styles from '../styles/cd.module.css'
 
-function Cd() {
-  const router = useRouter()
-  // console.log(router)
+function Cd(): JSX.Element {
+  const router: NextRouter = useRouter()
 
   const handleClick = async () => {
     if (router.pathname === '/posts/[id]') {

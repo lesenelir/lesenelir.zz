@@ -3,13 +3,13 @@ import useDeviceSize from "../hooks/useDeviceSize"
 
 import styles from '../styles/animation.module.css'
 
-function Animation() {
-  const canvasElement = useRef(null)
+function Animation(): JSX.Element {
+  const canvasElement = useRef<HTMLCanvasElement>(null)
   const [width, height] = useDeviceSize()
 
   // useEffect 真实DOM生成后执行
   useEffect(() => {
-    const canvas = canvasElement.current
+    const canvas: HTMLCanvasElement = canvasElement.current!
     const ctx = canvas.getContext('2d')
     const pendingTasks = [] // 存放function数组
 

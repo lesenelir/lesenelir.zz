@@ -4,6 +4,7 @@ import Layout from "../../components/layout"
 import Footer from "../../components/footer"
 import SubTitle from "../../components/subTitle"
 import Cd from "../../components/cd"
+import {GetStaticPaths, GetStaticProps} from "next"
 import "highlight.js/styles/lioshi.css"
 import hljs from "highlight.js/lib/core"
 import javascript from "highlight.js/lib/languages/javascript"
@@ -11,7 +12,19 @@ import {getAllPostIds, getPostDataById} from "../../lib/postsTool"
 
 import styles from '../../styles/markdown.module.css'
 
-function Post(props) {
+interface IPostData {
+  id: string,
+  contentHtml: string,
+  title: string,
+  date: string,
+  duration: string
+}
+
+interface Props {
+  postData: IPostData
+}
+
+function Post(props: Props) {
   // get post content by props.postData
   const {postData} = props
 
@@ -46,19 +59,17 @@ function Post(props) {
 
 export default Post
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
   const paths = await getAllPostIds()
-  // console.log(paths)
   return {
     paths,
     fallback: false
   }
 }
 
-export async function getStaticProps({params}) {
+export const getStaticProps: GetStaticProps = async ({params}: {params: {id: string}}) => {
   // Fetch necessary data for the blog post using params.id
-  const postData = await getPostDataById(params.id)
-
+  const postData = await getPostDataById(params?.id as string)
   return {
     props: {
       postData

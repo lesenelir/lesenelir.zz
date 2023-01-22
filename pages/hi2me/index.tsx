@@ -1,20 +1,19 @@
 import Head from "next/head"
 import Layout from "../../components/layout"
-import Photo from "../../components/Photo/photo"
+import Hi from "../../components/Hi2Me/hi"
 
-
-function Photos() {
+function Hi2me(): JSX.Element {
   return (
     <>
       <Head>
-        <title>Lesenelir&apos;s Photos</title>
+        <title>Lesenelir&apos;s Hi2Me dApp</title>
       </Head>
 
       <Layout>
-        <Photo/>
+        <Hi/>
       </Layout>
     </>
   )
 }
 
-export default Photos
+export default Hi2me

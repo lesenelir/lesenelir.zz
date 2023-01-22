@@ -2,7 +2,7 @@ import Head from "next/head"
 import Layout from "../../components/layout"
 import Project from "../../components/Project/project"
 
-function ProjectsPage() {
+function ProjectsPage(): JSX.Element {
   return (
     <>
       <Head>

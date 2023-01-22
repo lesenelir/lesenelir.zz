@@ -3,7 +3,14 @@ import {format, parseISO} from "date-fns"
 
 import styles from '../../styles/posts.module.css'
 
-function Item(props) {
+interface Props {
+  id: string,
+  title: string,
+  date: string,
+  duration: string
+}
+
+function Item(props: Props) {
   const {id, title, date, duration} = props
 
   return (

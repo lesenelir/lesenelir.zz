@@ -1,6 +1,6 @@
 import styles from '../styles/divider.module.css'
 
-function Divider() {
+function Divider(): JSX.Element {
   return (
     <div className={styles.divider}/>
   )

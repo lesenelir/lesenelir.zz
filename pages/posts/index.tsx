@@ -1,10 +1,21 @@
 import Head from "next/head"
 import Layout from "../../components/layout"
 import Content from "../../components/Post/content"
-
+import {GetStaticProps} from "next"
 import {getSortedPostsData} from "../../lib/postsTool"
 
-function PostsPage(props) {
+interface IPost {
+  id: string,
+  title: string,
+  date: string,
+  duration: string
+}
+
+interface Props {
+  allPostsData: IPost[]
+}
+
+function PostsPage(props: Props) {
   const {allPostsData} = props
 
   return (
@@ -22,8 +33,8 @@ function PostsPage(props) {
 
 export default PostsPage
 
-export async function getStaticProps() {
-  const allPostsData = await getSortedPostsData()
+export const getStaticProps: GetStaticProps = async () => {
+  const allPostsData: IPost[] = await getSortedPostsData()
   return {
     props: {
       allPostsData

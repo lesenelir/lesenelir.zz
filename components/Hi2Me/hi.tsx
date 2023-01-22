@@ -1,5 +1,5 @@
-import {useEffect, useState} from "react"
-import {ethers} from "ethers"
+import {useCallback, useEffect, useState} from "react"
+import {BigNumber, ethers} from "ethers"
 import Loader from "../Loading/loader"
 import Footer from "../footer"
 import Cd from "../cd"
@@ -7,26 +7,38 @@ import abi from '../../lib/WavePortal.json'
 
 import styles from '../../styles/hi.module.css'
 
+declare global {
+  interface Window {
+    ethereum: any
+  }
+}
+
+interface IWave {
+  address: string,
+  timestamp: Date,
+  message: string
+}
 
 const getEthereumObject = () => window.ethereum
 
 function Hi() {
-  const [currentAccount, setCurrentAccount] = useState('')
-  const [allWaves, setAllWaves] = useState([])
-  const [message, setMessage] = useState('')
-  const [isLoading, setIsLoading] = useState(false)
+  const [currentAccount, setCurrentAccount] = useState<string>('')
+  const [allWaves, setAllWaves] = useState<IWave[]>([])
+  const [message, setMessage] = useState<string>('')
+  const [isLoading, setIsLoading] = useState<boolean>(false)
 
   const contractAddress = '0x52c9c95F4B239B6F818a0C7ECA5fcB650D859299'
   const contractABI = abi.abi
 
-  const getAllWaves = async () => {
+  const getAllWaves = useCallback(async () => {
     try {
       const {ethereum} = window
       if (ethereum) {
-        const provider = new ethers.providers.Web3Provider(ethereum)
-        const signer = provider.getSigner()
-        const wavePortalContract = new ethers.Contract(contractAddress, contractABI, signer)
+        const provider: ethers.providers.Web3Provider = new ethers.providers.Web3Provider(ethereum)
+        const signer: ethers.providers.JsonRpcSigner = provider.getSigner()
+        const wavePortalContract: ethers.Contract = new ethers.Contract(contractAddress, contractABI, signer)
         const waves = await wavePortalContract.getAllWaves()
+        console.log('1', waves)
 
         const wavesCleaned = waves.map(wave => {
           return {
@@ -42,7 +54,7 @@ function Hi() {
     } catch (error) {
       console.log(error)
     }
-  }
+  }, [contractABI])
 
   const connectWallet = async () => {
     try {
@@ -105,11 +117,13 @@ function Hi() {
 
       const {ethereum} = window
       if (ethereum) {
-        const provider = new ethers.providers.Web3Provider(ethereum)
-        const signer = provider.getSigner()
-        const wavePortalContract = new ethers.Contract(contractAddress, contractABI, signer)
+        const provider: ethers.providers.Web3Provider = new ethers.providers.Web3Provider(ethereum)
+        const signer: ethers.providers.JsonRpcSigner = provider.getSigner()
+        const wavePortalContract: ethers.Contract = new ethers.Contract(contractAddress, contractABI, signer)
 
-        let count = await wavePortalContract.getTotalWaves()
+        // count is BigNumber
+        let count: BigNumber = await wavePortalContract.getTotalWaves()
+        console.log('count: ', count, 'typeof count: ', typeof count)
         console.log("Retrieved total wave count...", count.toNumber())
 
         /*
@@ -151,8 +165,7 @@ function Hi() {
     (async () => {
       await getAllWaves()
     })()
-  }, [])
-
+  }, [getAllWaves])
 
   return (
     <div className={styles.mainContainer}>
@@ -206,7 +219,7 @@ function Hi() {
         {isLoading && <Loader/>}
 
         {allWaves.map(wave => (
-          <div key={wave.timestamp} className={styles.item}>
+          <div key={wave.timestamp.getTime()} className={styles.item}>
             <div>
               <span className={styles.spanWord}>Address: </span>
               <span>{wave.address}</span>

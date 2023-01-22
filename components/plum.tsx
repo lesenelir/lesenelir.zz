@@ -1,27 +1,32 @@
-import {useEffect, useRef} from "react"
+import {useCallback, useEffect, useRef} from "react"
 import {useWindowSize} from "react-use"
 import useRafFn from "../hooks/useRafFn"
 
 import styles from '../styles/plum.module.css'
 
-function Plum() {
-  const size = useWindowSize()
-  const r180 = Math.PI
-  const r90 = Math.PI / 2
-  const r15 = Math.PI / 12
-  const color = '#88888820'
+interface ISize {
+  width: number,
+  height: number
+}
+
+function Plum(): JSX.Element {
+  const size: ISize = useWindowSize()
+  const r180: number = Math.PI
+  const r90: number = Math.PI / 2
+  const r15: number = Math.PI / 12
+  const color: '#88888820' = '#88888820'
 
   const {random} = Math
 
-  const start = useRef()
+  const start = useRef<Function>(() => {})
   const init = useRef(4)
   const len = useRef(7)
   const stopped = useRef(false)
 
-  const el = useRef(null)
+  const el = useRef<HTMLCanvasElement>(null)
 
-  const initCanvas = (canvas, width = 400, height = 400) => {
-    const ctx = canvas.getContext('2d')
+  const initCanvas = (canvas: HTMLCanvasElement, width = 400, height = 400) => {
+    const ctx = canvas.getContext('2d')!
 
     canvas.style.width = `${width}px`
     canvas.style.height = `${height}px`
@@ -37,19 +42,24 @@ function Plum() {
     return [x + dx, y + dy]
   }
 
-  let steps = []
-  let prevSteps = []
+  let steps: Function[] = []
+  let prevSteps: Function[] = []
+
   let iterations = 0
 
   let lastTime = performance.now()
   const interval = 1000 / 40
-  let controls
+
+  let controls: ReturnType<typeof useRafFn>
+
   const frame = () => {
     if (performance.now() - lastTime < interval) return
+
     iterations += 1
     prevSteps = steps
     steps = []
     lastTime = performance.now()
+
     if (!prevSteps.length) {
       controls.pause()
       stopped.current = true
@@ -58,20 +68,26 @@ function Plum() {
   }
   controls = useRafFn(frame)
 
-  const fn = async () => {
-    const canvas = el.current
+  // 定义在useEffect外，需要在useEffect内调用该函数时，需要把函数放入Effect的依赖数组中
+  // 如果没有被useCallback包装，每次重新渲染时都会触发Effect，这是不希望看到的情况
+  const fn = useCallback(async () => {
+    const canvas: HTMLCanvasElement = el.current!
     const {ctx} = initCanvas(canvas, size.width, size.height)
     const {width, height} = canvas
 
-    const step = (x, y, rad) => {
+    const step = (x: number, y: number, rad: number) => {
       const length = random() * len.current
+
       const [nx, ny] = polar2cart(x, y, length, rad)
+
       ctx.beginPath()
       ctx.moveTo(x, y)
       ctx.lineTo(nx, ny)
       ctx.stroke()
+
       const rad1 = rad + random() * r15
       const rad2 = rad - random() * r15
+
       if (
         nx < -100 ||
         nx > size.width + 100 ||
@@ -87,11 +103,14 @@ function Plum() {
 
     start.current = () => {
       controls.pause()
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       iterations = 0
       ctx.clearRect(0, 0, width, height)
       ctx.lineWidth = 1
       ctx.strokeStyle = color
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       prevSteps = []
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       steps = [
         () => step(random() * size.width, 0, r90),
         () => step(random() * size.width, size.height, -r90),
@@ -103,11 +122,12 @@ function Plum() {
       stopped.current = false
     }
     start.current()
-  }
+  }, [])
+
 
   useEffect(() => {
-    fn()
-  }, [])
+    fn().catch(err => console.log(err))
+  }, [fn])
 
   return (
     <>

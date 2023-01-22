@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Home from '../components/Home/home'
 import Layout from "../components/layout"
 
-function HomePage() {
+function HomePage(): JSX.Element {
   return (
     <>
       <Head>

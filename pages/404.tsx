@@ -3,7 +3,7 @@ import Footer from "../components/footer"
 
 import styles from '../styles/404.module.css'
 
-function NotFoundPage() {
+function NotFoundPage(): JSX.Element {
   return (
     <Layout>
       <div className={styles.container}>

@@ -1,11 +1,22 @@
 import Layout from "../../components/layout"
 import Footer from "../../components/footer"
-import {getTimePost} from "../../lib/timeTool"
 import Cd from "../../components/cd"
+import {GetStaticProps} from "next"
+import {getTimePost} from "../../lib/timeTool"
 
 import styles from '../../styles/timeline.module.css'
 
-function TimelinePage(props) {
+interface ITimelineData {
+  contentHtml: string,
+  title: string,
+  date: string
+}
+
+interface Props {
+  timelineData: ITimelineData
+}
+
+function TimelinePage(props: Props) {
   const {timelineData} = props
 
   return (
@@ -28,7 +39,7 @@ function TimelinePage(props) {
 
 export default TimelinePage
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
   const timelineData = await getTimePost()
 
   return {

@@ -4,11 +4,21 @@ import Footer from "../footer"
 
 import styles from '../../styles/posts.module.css'
 
-function Content(props) {
-  const {allPosts} = props
-  // console.log(allPosts)
+interface IPost {
+  id: string,
+  title: string,
+  date: string,
+  duration: string
+}
 
-  const getPostsByYear = (year) => {
+interface Props {
+  allPosts: IPost[]
+}
+
+function Content(props: Props) {
+  const {allPosts} = props
+
+  const getPostsByYear = (year: string) => {
     return allPosts.filter(post => post.date.includes(year))
   }
 

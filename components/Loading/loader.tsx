@@ -1,6 +1,6 @@
 import styles from '../../styles/loader.module.css'
 
-function Loader() {
+function Loader(): JSX.Element {
   return (
     <div className={styles.spinner}>
       <div className={styles.bounce1}/>

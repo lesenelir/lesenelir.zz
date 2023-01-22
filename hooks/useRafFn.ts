@@ -2,7 +2,7 @@ import {useRef} from "react"
 
 function useRafFn(fn) {
   const isActive = useRef(false)
-  let rafId = null
+  let rafId: null | number = null
 
   const loop = () => {
     if (!isActive.current || !window) return

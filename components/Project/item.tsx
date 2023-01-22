@@ -1,6 +1,13 @@
 import styles from '../../styles/project.module.css'
 
-function Item(props) {
+interface Props {
+  name: string,
+  description: string,
+  icon: string,
+  repo: string
+}
+
+function Item(props: Props) {
   const {name, description, icon, repo} = props
 
   return (

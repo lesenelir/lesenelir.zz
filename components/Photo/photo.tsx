@@ -4,9 +4,7 @@ import Footer from "../footer"
 
 import styles from '../../styles/photo.module.css'
 
-
-function Photo() {
-
+function Photo(): JSX.Element {
   return (
     <div className={styles.box}>
       <div>
