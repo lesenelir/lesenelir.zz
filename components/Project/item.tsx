@@ -7,7 +7,7 @@ interface Props {
   repo: string
 }
 
-function Item(props: Props) {
+function Item(props: Props): JSX.Element {
   const {name, description, icon, repo} = props
 
   return (

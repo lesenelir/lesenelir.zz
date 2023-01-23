@@ -8,7 +8,7 @@ interface Props {
   setTheme: Dispatch<SetStateAction<string>>
 }
 
-function Navbar(props: Props) {
+function Navbar(props: Props): JSX.Element {
   const {theme, setTheme} = props
 
   const changeTheme = () => {

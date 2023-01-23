@@ -15,7 +15,7 @@ interface Props {
   allPostsData: IPost[]
 }
 
-function PostsPage(props: Props) {
+function PostsPage(props: Props): JSX.Element {
   const {allPostsData} = props
 
   return (

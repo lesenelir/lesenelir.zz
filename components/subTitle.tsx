@@ -5,7 +5,7 @@ interface Props {
   duration: string
 }
 
-function SubTitle(props: Props) {
+function SubTitle(props: Props): JSX.Element {
   const {dateString, duration} = props
 
   const date: Date = parseISO(dateString)

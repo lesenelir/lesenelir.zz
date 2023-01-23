@@ -16,7 +16,7 @@ interface Props {
   timelineData: ITimelineData
 }
 
-function TimelinePage(props: Props) {
+function TimelinePage(props: Props): JSX.Element {
   const {timelineData} = props
 
   return (

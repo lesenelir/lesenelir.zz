@@ -10,7 +10,7 @@ interface Props {
   duration: string
 }
 
-function Item(props: Props) {
+function Item(props: Props): JSX.Element {
   const {id, title, date, duration} = props
 
   return (

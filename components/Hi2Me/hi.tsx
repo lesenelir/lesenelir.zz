@@ -21,7 +21,7 @@ interface IWave {
 
 const getEthereumObject = () => window.ethereum
 
-function Hi() {
+function Hi(): JSX.Element {
   const [currentAccount, setCurrentAccount] = useState<string>('')
   const [allWaves, setAllWaves] = useState<IWave[]>([])
   const [message, setMessage] = useState<string>('')

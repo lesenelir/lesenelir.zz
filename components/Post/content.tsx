@@ -15,7 +15,7 @@ interface Props {
   allPosts: IPost[]
 }
 
-function Content(props: Props) {
+function Content(props: Props): JSX.Element {
   const {allPosts} = props
 
   const getPostsByYear = (year: string) => {

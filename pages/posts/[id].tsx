@@ -24,7 +24,7 @@ interface Props {
   postData: IPostData
 }
 
-function Post(props: Props) {
+function Post(props: Props): JSX.Element {
   // get post content by props.postData
   const {postData} = props
 
