@@ -87,6 +87,19 @@ function Navbar(props: Props): JSX.Element {
             &#xe799;
           </a>
         </Link>
+
+        {/*/!*Feed RSS*!/*/}
+        {/*<Link href='/feed.xml'>*/}
+        {/*  <a*/}
+        {/*    rel='noreferrer'*/}
+        {/*    target='_blank'*/}
+        {/*    className={`iconfont ${styles.icon} ${styles.link} ${styles.pc}`}*/}
+        {/*  >*/}
+        {/*    &#xe943;*/}
+        {/*    /!*&#xe652;*!/*/}
+        {/*    /!*&#xe74a;*!/*/}
+        {/*  </a>*/}
+        {/*</Link>*/}
         {
           theme === 'light' ? (
             <span className={`iconfont ${styles.icon}`} onClick={changeTheme}>
