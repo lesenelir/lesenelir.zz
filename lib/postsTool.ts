@@ -2,11 +2,14 @@ import fs from 'node:fs'
 import fsPromises from 'node:fs/promises'
 import path from 'node:path'
 import matter from "gray-matter"
-import {unified} from 'unified'
-import remarkParse from 'remark-parse'
-import remarkRehype from 'remark-rehype'
-import rehypeSanitize from 'rehype-sanitize'
-import rehypeStringify from 'rehype-stringify'
+import { remark } from 'remark'
+import html from 'remark-html'
+// import {unified} from 'unified'
+// import remarkParse from 'remark-parse'
+// import remarkRehype from 'remark-rehype'
+// import rehypeSanitize from 'rehype-sanitize'
+// import rehypeStringify from 'rehype-stringify'
+
 
 async function getSortedPostsData() {
   const postsDirectory = path.join(process.cwd(), 'public', 'posts')
@@ -17,6 +20,7 @@ async function getSortedPostsData() {
     const id = fileName.replace(/\.md$/, '')
     // read markdown file as string
     const fullPath = path.join(postsDirectory, fileName)
+    // fileContents is the entire native markdown content
     const fileContents = fs.readFileSync(fullPath, 'utf-8')
 
     const matterResult: matter.GrayMatterFile<string> = matter(fileContents)
@@ -85,14 +89,18 @@ async function getPostDataById(id: string) {
   const matterResult: matter.GrayMatterFile<string> = matter(fileContents) // .md metadata
 
   // Use remark to convert markdown into HTML string
-  const fileContent = await unified()
-    .use(remarkParse)
-    .use(remarkRehype)
-    .use(rehypeSanitize)
-    .use(rehypeStringify)
+  // const fileContent = await unified()
+  //   .use(remarkParse)
+  //   .use(remarkRehype)
+  //   .use(rehypeSanitize)
+  //   .use(rehypeStringify)
+  //   .process(matterResult.content)
+  // const contentHtml = fileContent.value
+  const fileContent = await remark()
+    .use(html)
     .process(matterResult.content)
 
-  const contentHtml = fileContent.value
+  const contentHtml = fileContent.toString()
 
   return {
     id,
