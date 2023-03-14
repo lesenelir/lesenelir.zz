@@ -13,14 +13,11 @@ function Home(): JSX.Element {
             Hi, I am Lesenelir Zhou, a web developer.{' '}
             Studying at Jinan University, majoring in Computer Science.
           </p>
-          {/*<p>*/}
-          {/*  The current focus is building more projects, based on the React ecosystem.*/}
-          {/*</p>*/}
           <p>
-            The current focus is on learning front-end knowledge, blockchain and building more projects based
+            The current focus is on acquiring expertise in front-end development, exploring blockchain technology,
           </p>
           <p>
-            on the React ecosystem.
+            and building more projects based on the React ecosystem and blockchain ecosystem.
           </p>
         </article>
         <Divider/>
@@ -28,21 +25,24 @@ function Home(): JSX.Element {
         <article>
           <p>
             I enjoy programming and sharing what I have learned. {' '}
-            You can find my all projects and demos on the {' '}
+            To me, programming is a way of self-expression
           </p>
           <p>
-            <a href={`/projects`} rel='noreferrer' className={styles.link}>
-              projects page,
-            </a>
-            {' '} with {' '}
+            and creativity. All of my projects and demos, along with their {' '}
             <a href='https://github.com/lesenelir'
                rel='noreferrer'
                target='_blank'
                className={styles.link}
             >
-              Github
+              GitHub
             </a>
-            {' '} repositories and some online pages.
+            {' '} repositories and some online
+          </p>
+          <p>
+            pages, can be accessed on the {' '}
+            <a href={`/projects`} rel='noreferrer' className={styles.link}>
+              Projects page
+            </a>.
           </p>
           <p>
             Some of my projects: react admin system | web portfolio | mini react | flex baidu
@@ -52,22 +52,22 @@ function Home(): JSX.Element {
 
         <article>
           <p>
-            At the same time, I am also interested in web3. Learning the basics of web3 knowledge and contract
+            At the same time, I am also interested in web3 & crypto. Learning the basics of web3 knowledge and
           </p>
           <p>
-            development from {' '}
+            contract development from {' '}
             <a
               href="https://learnweb3.io/"
               rel='noreferrer'
               target='_blank'
               className={styles.link}
             >
-              LearnWeb3 DAO.
-            </a>
-            {' '} I write some articles from my thinking in Chinese on mirror.
+              LearnWeb3 DAO
+            </a>.
+            {' '} Additionally, I will write some articles from my thinking
           </p>
           <p>
-            You can find me on mirror by {' '}
+            in Chinese on mirror. You can find me on mirror by {' '}
             <a
               href="https://mirror.xyz/lesenelir.eth"
               rel='noreferrer'
@@ -82,12 +82,12 @@ function Home(): JSX.Element {
 
         <article>
           <p>
-            Outside of programming, I enjoy watching movies.{' '}
-            {/*I hope to study directing at NYU one day.*/}
-            My dream is to study directing at NYU one day,
+            Apart from programming, I take pleasure in watching movies. I aspire to pursue a degree in film
+            {/*Outside of programming, I enjoy watching movies.{' '}*/}
+            {/*My dream is to study directing at New York*/}
           </p>
           <p>
-            and become a new generation of leading Chinese directors.
+            directing at New York University and become a director of the new generation in China.
           </p>
         </article>
         <Divider/>
