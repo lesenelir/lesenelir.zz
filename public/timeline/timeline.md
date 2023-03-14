@@ -28,4 +28,4 @@ date: '2020-06-08'
 - Keep Learning & Keep Building
 
 ### 2023
-- Start relearning English in my spare time
+- Start relearning English in my free time
