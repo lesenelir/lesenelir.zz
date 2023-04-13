@@ -28,6 +28,7 @@
 .md h6,
 .md strong {
   color: var(--surfaceStrong);
+  transition: 0.8s;
 }
 
 .md p,
@@ -36,6 +37,7 @@
   font-size: 16px;
   line-height: 28px;
   color: var(--surfaceMain);
+  transition: 0.8s;
 }
 
 .md li {
@@ -47,6 +49,7 @@
   opacity: 0.7;
   margin-left: 0;
   border-left: 4px solid var(--surfaceSub);
+  transition: 0.8s;
 }
 
 .md code {
@@ -60,6 +63,7 @@
   padding: 3px;
   margin: 0 2px;
   border-radius: 5px;
+  transition: 0.8s;
 }
 
 .md hr {
@@ -83,10 +87,12 @@
 .md a {
   color: var(--surfaceStrong);
   border-bottom: 1px solid rgba(125,125,125,.5);
-  transition: border .3s ease-in-out;
+  /*transition: border .3s ease-in-out;*/
+  transition: 0.8s;
 }
 
 .md a:hover {
   border-bottom: 1px solid rgba(125,125,125,1);
-  transition: border .3s ease-in-out;
+  /*transition: border .3s ease-in-out;*/
+  transition: 0.8s;
 }

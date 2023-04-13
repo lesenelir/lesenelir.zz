@@ -12,6 +12,7 @@
   color: var(--surfaceStrong);
   font-size: 30px;
   font-weight: 800;
+  transition: 0.8s;
 }
 
 

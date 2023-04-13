@@ -71,6 +71,7 @@ html::-webkit-scrollbar-thumb:active {
   --surfaceBackground: #ffffff;
   --surfaceCodeBlock: #F8F8F8;
   --surfaceBtnBackground: #EFEFEF;
+  transition: 0.8s;
 }
 
 .layout[color-mode='dark'] {
@@ -81,6 +82,7 @@ html::-webkit-scrollbar-thumb:active {
   --surfaceBackground: #000000;
   --surfaceCodeBlock: #4b4b4b;
   --surfaceBtnBackground: #212121;
+  transition: 0.8s;
 }
 
 @media (prefers-color-scheme: dark) {

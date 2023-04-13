@@ -17,6 +17,7 @@
   font-size: 32px;
   font-weight: 600;
   color: var(--surfaceStrong);
+  transition: 0.8s;
 }
 
 .bio {
@@ -26,6 +27,7 @@
 
 .spanWord {
   color: var(--surfaceStrong);
+  transition: 0.8s;
 }
 
 .area {
@@ -35,12 +37,14 @@
   outline: none;
   color: var(--surfaceMain);
   background-color: var(--surfaceBackground);
+  transition: 0.8s;
 }
 
 .link {
   color: var(--surfaceStrong);
   border-bottom: 1px solid rgba(125,125,125,.3);
-  transition: border .3s ease-in-out;
+  /*transition: border .3s ease-in-out;*/
+  transition: 0.8s;
 }
 
 .button {
@@ -51,6 +55,7 @@
   cursor: pointer;
   color: var(--surfaceMain);
   background-color: var(--surfaceBtnBackground);
+  transition: 0.8s;
 }
 
 .item {
