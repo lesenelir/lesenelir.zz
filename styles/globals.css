@@ -2,8 +2,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  /*color: #555555;*/
-  /*background-color: var(--surfaceBackground);*/
   font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -36,33 +34,6 @@ a {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/*!*设置滚动条样式*!*/
-/*html::-webkit-scrollbar {*/
-/*  width: 6px;*/
-/*  height: 6px;*/
-/*}*/
-
-/*html::-webkit-scrollbar-track, html::-webkit-scrollbar-corner {*/
-/*  !*background: transparent;*!*/
-/*  opacity: 0;*/
-/*}*/
-
-/*html::-webkit-scrollbar-thumb {*/
-/*  background: rgba(136, 136, 136, .3);*/
-/*  border-radius: 10px;*/
-/*}*/
-
-/*html::-webkit-scrollbar-thumb:hover {*/
-/*  background: rgba(136, 136, 136, .8);*/
-/*  border-radius: 10px;*/
-/*}*/
-
-/*html::-webkit-scrollbar-thumb:active {*/
-/*  background: rgba(136, 136, 136, .8);*/
-/*  border-radius: 10px;*/
-/*}*/
-
-
 /* Hide scrollbar but keep scrolling */
 html::-webkit-scrollbar {
   display: none;
@@ -80,8 +51,11 @@ html {
   --surfaceNavbar: #374151;
   --surfaceStrong: #000000;
   --surfaceBackground: #ffffff;
-  --surfaceCodeBlock: #F8F8F8;
-  --surfaceBtnBackground: #EFEFEF;
+  /*--surfaceCodeBlock: #F8F8F8;*/
+  --surfaceCodeBlock: #E8EBEB;
+  --surfaceBtnBackground: #E6E6E6;
+
+  background: linear-gradient(to bottom, transparent, rgb(255, 255, 255)) rgb(221, 226, 227);
   transition: 0.8s;
 }
 
@@ -93,6 +67,8 @@ html {
   --surfaceBackground: #000000;
   --surfaceCodeBlock: #4b4b4b;
   --surfaceBtnBackground: #212121;
+
+  background: linear-gradient(to bottom, transparent, rgb(0, 0, 0)) rgb(29, 31, 36);
   transition: 0.8s;
 }
 
