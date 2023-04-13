@@ -204,7 +204,14 @@ function Hi(): JSX.Element {
         </div>
 
         <span className={styles.spanWord}>Message:</span>
-        <textarea name="message" className={styles.area} onChange={(e) => setMessage(e.target.value)}/>
+        <br/>
+
+        <textarea
+          name="message"
+          className={styles.area}
+          placeholder={'Type your message here'}
+          onChange={(e) => setMessage(e.target.value)}
+        />
 
         <button className={styles.button} onClick={wave}>
           Leave a message

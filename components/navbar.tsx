@@ -56,7 +56,7 @@ function Navbar(props: Props): JSX.Element {
           <a className={`${styles.link} ${styles.pc}`}>Timeline</a>
         </Link>
         <Link href={`/hi2me`}>
-          <a className={`${styles.link} ${styles.pc}`}>Hi2Me</a>
+          <a className={`${styles.link} ${styles.pc}`}>Message</a>
         </Link>
         <Link href='https://mirror.xyz/lesenelir.eth'>
           <a
