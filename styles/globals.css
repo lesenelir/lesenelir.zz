@@ -37,29 +37,40 @@ a {
 }
 
 /*!*设置滚动条样式*!*/
+/*html::-webkit-scrollbar {*/
+/*  width: 6px;*/
+/*  height: 6px;*/
+/*}*/
+
+/*html::-webkit-scrollbar-track, html::-webkit-scrollbar-corner {*/
+/*  !*background: transparent;*!*/
+/*  opacity: 0;*/
+/*}*/
+
+/*html::-webkit-scrollbar-thumb {*/
+/*  background: rgba(136, 136, 136, .3);*/
+/*  border-radius: 10px;*/
+/*}*/
+
+/*html::-webkit-scrollbar-thumb:hover {*/
+/*  background: rgba(136, 136, 136, .8);*/
+/*  border-radius: 10px;*/
+/*}*/
+
+/*html::-webkit-scrollbar-thumb:active {*/
+/*  background: rgba(136, 136, 136, .8);*/
+/*  border-radius: 10px;*/
+/*}*/
+
+
+/* Hide scrollbar but keep scrolling */
 html::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  display: none;
 }
 
-html::-webkit-scrollbar-track, html::-webkit-scrollbar-corner {
-  /*background: transparent;*/
-  opacity: 0;
-}
-
-html::-webkit-scrollbar-thumb {
-  background: rgba(136, 136, 136, .3);
-  border-radius: 10px;
-}
-
-html::-webkit-scrollbar-thumb:hover {
-  background: rgba(136, 136, 136, .8);
-  border-radius: 10px;
-}
-
-html::-webkit-scrollbar-thumb:active {
-  background: rgba(136, 136, 136, .8);
-  border-radius: 10px;
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 /* Dark Theme & Light Theme */
