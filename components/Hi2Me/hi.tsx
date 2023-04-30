@@ -1,8 +1,8 @@
 import {useCallback, useEffect, useState} from "react"
 import {BigNumber, ethers} from "ethers"
 import Loader from "../Loading/loader"
-import Footer from "../footer"
-import Cd from "../cd"
+import Footer from "../Layout/footer"
+import Cd from "../Utils/cd"
 import abi from '../../lib/WavePortal.json'
 
 import styles from '../../styles/hi.module.css'

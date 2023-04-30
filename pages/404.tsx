@@ -1,5 +1,5 @@
-import Layout from "../components/layout"
-import Footer from "../components/footer"
+import Layout from "../components/Layout/layout"
+import Footer from "../components/Layout/footer"
 
 import styles from '../styles/404.module.css'
 

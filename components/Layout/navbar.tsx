@@ -1,7 +1,7 @@
 import {Dispatch, SetStateAction} from "react"
 import Link from "next/link"
 
-import styles from '../styles/navbar.module.css'
+import styles from '../../styles/navbar.module.css'
 
 interface Props {
   theme: string,

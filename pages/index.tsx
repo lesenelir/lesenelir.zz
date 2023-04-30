@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Home from '../components/Home/home'
-import Layout from "../components/layout"
+import Layout from "../components/Layout/layout"
 
 function HomePage(): JSX.Element {
   return (

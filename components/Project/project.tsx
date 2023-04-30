@@ -1,6 +1,6 @@
-import Footer from "../footer"
+import Footer from "../Layout/footer"
 import Item from "./item"
-import Cd from "../cd"
+import Cd from "../Utils/cd"
 
 import styles from '../../styles/project.module.css'
 

@@ -1,5 +1,5 @@
-import Divider from "../divider"
-import Footer from "../footer"
+import Divider from "../Utils/divider"
+import Footer from "../Layout/footer"
 
 import styles from '../../styles/home.module.css'
 

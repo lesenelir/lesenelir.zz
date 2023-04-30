@@ -1,8 +1,8 @@
 import {useCallback, useEffect, useRef} from "react"
 import {useWindowSize} from "react-use"
-import useRafFn from "../hooks/useRafFn"
+import useRafFn from "../../hooks/useRafFn"
 
-import styles from '../styles/plum.module.css'
+import styles from '../../styles/plum.module.css'
 
 interface ISize {
   width: number,

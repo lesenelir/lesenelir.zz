@@ -1,6 +1,6 @@
 import Item from "./item"
-import Cd from "../cd"
-import Footer from "../footer"
+import Cd from "../Utils/cd"
+import Footer from "../Layout/footer"
 
 import styles from '../../styles/photo.module.css'
 

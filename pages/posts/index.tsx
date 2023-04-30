@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Layout from "../../components/layout"
+import Layout from "../../components/Layout/layout"
 import Content from "../../components/Post/content"
 import {GetStaticProps} from "next"
 import {getSortedPostsData} from "../../lib/postsTool"

@@ -1,6 +1,6 @@
-import Layout from "../../components/layout"
-import Footer from "../../components/footer"
-import Cd from "../../components/cd"
+import Layout from "../../components/Layout/layout"
+import Footer from "../../components/Layout/footer"
+import Cd from "../../components/Utils/cd"
 import {GetStaticProps} from "next"
 import {getTimePost} from "../../lib/timeTool"
 

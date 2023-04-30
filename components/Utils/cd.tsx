@@ -1,6 +1,6 @@
 import {NextRouter, useRouter} from "next/router"
 
-import styles from '../styles/cd.module.css'
+import styles from '../../styles/cd.module.css'
 
 function Cd(): JSX.Element {
   const router: NextRouter = useRouter()

@@ -2,9 +2,9 @@ import {useEffect, useState} from "react"
 import {NextRouter, useRouter} from "next/router"
 import Head from "next/head"
 import Navbar from "./navbar"
-import Plum from "./plum"
+import Plum from "../Utils/plum"
 
-import styles from '../styles/layout.module.css'
+import styles from '../../styles/layout.module.css'
 
 export const siteName = 'Lesenelir Zhou'
 

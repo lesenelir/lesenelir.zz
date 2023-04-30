@@ -1,4 +1,4 @@
-import styles from '../styles/divider.module.css'
+import styles from '../../styles/divider.module.css'
 
 function Divider(): JSX.Element {
   return (

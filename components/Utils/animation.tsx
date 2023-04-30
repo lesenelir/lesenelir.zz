@@ -1,7 +1,7 @@
 import {useEffect, useRef} from "react"
-import useDeviceSize from "../hooks/useDeviceSize"
+import useDeviceSize from "../../hooks/useDeviceSize"
 
-import styles from '../styles/animation.module.css'
+import styles from '../../styles/animation.module.css'
 
 function Animation(): JSX.Element {
   const canvasElement = useRef<HTMLCanvasElement>(null)

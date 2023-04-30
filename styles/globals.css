@@ -56,7 +56,7 @@ html {
   --surfaceCodeBlock: #E8EBEB;
   --surfaceBtnBackground: #E6E6E6;
 
-  background: linear-gradient(to bottom, transparent, rgb(255, 255, 255)) rgb(221, 226, 227);
+  /*background: linear-gradient(to bottom, transparent, rgb(255, 255, 255)) rgb(221, 226, 227);*/
   transition: 0.8s;
 }
 

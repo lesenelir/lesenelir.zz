@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Layout from "../../components/layout"
+import Layout from "../../components/Layout/layout"
 import Hi from "../../components/Hi2Me/hi"
 
 function Hi2me(): JSX.Element {
