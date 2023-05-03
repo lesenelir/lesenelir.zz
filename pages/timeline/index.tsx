@@ -12,11 +12,11 @@ interface ITimelineData {
   date: string
 }
 
-interface Props {
+interface IProps {
   timelineData: ITimelineData
 }
 
-function TimelinePage(props: Props): JSX.Element {
+function TimelinePage(props: IProps): JSX.Element {
   const {timelineData} = props
 
   return (
