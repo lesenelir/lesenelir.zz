@@ -20,11 +20,11 @@ interface IPostData {
   duration: string
 }
 
-interface Props {
+interface IProps {
   postData: IPostData
 }
 
-function Post(props: Props): JSX.Element {
+function Post(props: IProps): JSX.Element {
   // get post content by props.postData
   const {postData} = props
 

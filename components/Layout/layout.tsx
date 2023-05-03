@@ -8,11 +8,11 @@ import styles from '../../styles/layout.module.css'
 
 export const siteName = 'Lesenelir Zhou'
 
-interface Props {
+interface IProps {
   children: JSX.Element
 }
 
-function Layout(props: Props): JSX.Element {
+function Layout(props: IProps): JSX.Element {
   const [theme, setTheme] = useState<string>('light')
   const router: NextRouter = useRouter()
 

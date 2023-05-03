@@ -11,11 +11,11 @@ interface IPost {
   duration: string
 }
 
-interface Props {
+interface IProps {
   allPostsData: IPost[]
 }
 
-function PostsPage(props: Props): JSX.Element {
+function PostsPage(props: IProps): JSX.Element {
   const {allPostsData} = props
 
   return (

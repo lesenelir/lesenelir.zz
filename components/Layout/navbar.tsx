@@ -3,12 +3,12 @@ import Link from "next/link"
 
 import styles from '../../styles/navbar.module.css'
 
-interface Props {
+interface IProps {
   theme: string,
   setTheme: Dispatch<SetStateAction<string>>
 }
 
-function Navbar(props: Props): JSX.Element {
+function Navbar(props: IProps): JSX.Element {
   const {theme, setTheme} = props
 
   const changeTheme = () => {

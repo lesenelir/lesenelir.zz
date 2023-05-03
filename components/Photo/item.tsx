@@ -116,11 +116,11 @@ const images = [
   }
 ]
 
-interface Props {
+interface IProps {
   currentDate: string
 }
 
-function Item(props: Props): JSX.Element {
+function Item(props: IProps): JSX.Element {
   const {currentDate} = props
 
   const getPhotosByDate = (date: string) => {

@@ -11,11 +11,11 @@ interface IPost {
   duration: string
 }
 
-interface Props {
+interface IProps {
   allPosts: IPost[]
 }
 
-function Content(props: Props): JSX.Element {
+function Content(props: IProps): JSX.Element {
   const {allPosts} = props
 
   const getPostsByYear = (year: string) => {
