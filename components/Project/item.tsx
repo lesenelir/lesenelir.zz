@@ -17,7 +17,8 @@ function Item(props: Props): JSX.Element {
       target='_blank'
     >
       <div className={styles.item}>
-        <span className={`iconfont ${styles.icon}`}>{icon}</span>
+        {/*<span className={`iconfont ${styles.icon}`}>{icon}</span>*/}
+        <span dangerouslySetInnerHTML={{__html: icon}} className={`iconfont ${styles.icon}`} />
         <div>
           <p className={styles.name}>{name}</p>
           <p className={styles.description}>{description}</p>
