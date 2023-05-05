@@ -1,11 +1,11 @@
 import {parseISO, format} from 'date-fns'
 
-interface Props {
+interface IProps {
   dateString: string,
   duration: string
 }
 
-function SubTitle(props: Props): JSX.Element {
+function SubTitle(props: IProps): JSX.Element {
   const {dateString, duration} = props
 
   const date: Date = parseISO(dateString)

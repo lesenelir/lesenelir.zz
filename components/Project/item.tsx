@@ -1,13 +1,13 @@
 import styles from '../../styles/project.module.css'
 
-interface Props {
+interface IProps {
   name: string,
   description: string,
   icon: string,
   repo: string
 }
 
-function Item(props: Props): JSX.Element {
+function Item(props: IProps): JSX.Element {
   const {name, description, icon, repo} = props
 
   return (
