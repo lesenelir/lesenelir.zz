@@ -24,7 +24,7 @@ This project is a portfolio website built with nextjs.
 - Get the repository code
 
 ```
-git clone https://github.com/lesenelir/meta-portfolio.git
+git clone https://github.com/lesenelir/lesenelir.me.git
 ```
 
 - Installing dependencies
