@@ -75,4 +75,4 @@ Modern browsers supported, IE not supported
 ## License
 code is license under [MIT](https://opensource.org/licenses/MIT)
 
-words and words and images are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+words and images are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
