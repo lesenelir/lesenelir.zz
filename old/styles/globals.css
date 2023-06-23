@@ -1,89 +1,89 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/*@tailwind base;*/
+/*@tailwind components;*/
+/*@tailwind utilities;*/
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-size: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+/*html,*/
+/*body {*/
+/*  padding: 0;*/
+/*  margin: 0;*/
+/*  font-size: 16px;*/
+/*  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,*/
+/*  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;*/
+/*}*/
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+/*a {*/
+/*  color: inherit;*/
+/*  text-decoration: none;*/
+/*}*/
 
-* {
-  box-sizing: border-box;
-}
+/** {*/
+/*  box-sizing: border-box;*/
+/*}*/
 
-.layout {
-  color: var(--surfaceMain);
-  background-color: var(--surfaceBackground);
-}
+/*.layout {*/
+/*  color: var(--surfaceMain);*/
+/*  background-color: var(--surfaceBackground);*/
+/*}*/
 
-@font-face {
-  font-family: 'iconfont';
-  src: url('/iconfont.ttf') format('truetype');
-}
+/*@font-face {*/
+/*  font-family: 'iconfont';*/
+/*  src: url('/iconfont.ttf') format('truetype');*/
+/*}*/
 
-.iconfont {
-  font-family: "iconfont", serif !important;
-  font-size: 16px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/*.iconfont {*/
+/*  font-family: "iconfont", serif !important;*/
+/*  font-size: 16px;*/
+/*  font-style: normal;*/
+/*  -webkit-font-smoothing: antialiased;*/
+/*  -moz-osx-font-smoothing: grayscale;*/
+/*}*/
 
-/* Hide scrollbar but keep scrolling */
-html::-webkit-scrollbar {
-  display: none;
-}
+/*!* Hide scrollbar but keep scrolling *!*/
+/*html::-webkit-scrollbar {*/
+/*  display: none;*/
+/*}*/
 
-html {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
+/*html {*/
+/*  -ms-overflow-style: none; !* IE and Edge *!*/
+/*  scrollbar-width: none;  !* Firefox *!*/
+/*}*/
 
-/* Dark Theme & Light Theme */
-.layout[color-mode='light'] {
-  --surfaceMain: #555555; /* Deep Gray */
-  --surfaceSub: #7D7D7D; /* Light Gray */
-  --surfaceNavbar: #374151;
-  --surfaceStrong: #000000;
-  --surfaceBackground: #ffffff;
-  /*--surfaceCodeBlock: #F8F8F8;*/
-  /*--surfaceBtnBackground: #EFEFEF;*/
-  --surfaceCodeBlock: #E8EBEB;
-  --surfaceBtnBackground: #E6E6E6;
+/*!* Dark Theme & Light Theme *!*/
+/*.layout[color-mode='light'] {*/
+/*  --surfaceMain: #555555; !* Deep Gray *!*/
+/*  --surfaceSub: #7D7D7D; !* Light Gray *!*/
+/*  --surfaceNavbar: #374151;*/
+/*  --surfaceStrong: #000000;*/
+/*  --surfaceBackground: #ffffff;*/
+/*  !*--surfaceCodeBlock: #F8F8F8;*!*/
+/*  !*--surfaceBtnBackground: #EFEFEF;*!*/
+/*  --surfaceCodeBlock: #E8EBEB;*/
+/*  --surfaceBtnBackground: #E6E6E6;*/
 
-  /*background: linear-gradient(to bottom, transparent, rgb(255, 255, 255)) rgb(221, 226, 227);*/
-  transition: 0.8s;
-}
+/*  !*background: linear-gradient(to bottom, transparent, rgb(255, 255, 255)) rgb(221, 226, 227);*!*/
+/*  transition: 0.8s;*/
+/*}*/
 
-.layout[color-mode='dark'] {
-  --surfaceMain: #BBBBBB;
-  --surfaceSub: #E5E7EB;
-  --surfaceNavbar: #E5E7EB;
-  --surfaceStrong: #ffffff;
-  --surfaceBackground: #000000;
-  --surfaceCodeBlock: #4b4b4b;
-  --surfaceBtnBackground: #212121;
+/*.layout[color-mode='dark'] {*/
+/*  --surfaceMain: #BBBBBB;*/
+/*  --surfaceSub: #E5E7EB;*/
+/*  --surfaceNavbar: #E5E7EB;*/
+/*  --surfaceStrong: #ffffff;*/
+/*  --surfaceBackground: #000000;*/
+/*  --surfaceCodeBlock: #4b4b4b;*/
+/*  --surfaceBtnBackground: #212121;*/
 
-  background: linear-gradient(to bottom, transparent, rgb(0, 0, 0)) rgb(29, 31, 36);
-  transition: 0.8s;
-}
+/*  background: linear-gradient(to bottom, transparent, rgb(0, 0, 0)) rgb(29, 31, 36);*/
+/*  transition: 0.8s;*/
+/*}*/
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+/*@media (prefers-color-scheme: dark) {*/
+/*  html {*/
+/*    color-scheme: dark;*/
+/*  }*/
 
-  body {
-    color: white;
-    background: black;
-  }
-}
+/*  body {*/
+/*    color: white;*/
+/*    background: black;*/
+/*  }*/
+/*}*/
