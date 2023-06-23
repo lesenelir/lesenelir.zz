@@ -33,13 +33,11 @@ function Layout(props: IProps): JSX.Element {
 
       <div className='layout' color-mode={theme}>
         {/* All Pages Layout Component */}
-        {/*<Animation/>*/}
         <Navbar theme={theme} setTheme={setTheme}/>
         <div className={styles.container}>
           {props.children}
         </div>
         {router.pathname !== '/posts/[id]' && <Plum/>}
-        {/*<Plum/>*/}
       </div>
     </>
   )
