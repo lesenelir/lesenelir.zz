@@ -19,6 +19,8 @@ module.exports = {
         // main text color
         textLight: '#555555',
         textDark: '#BBBBBB',
+        // border bottom underline
+        borderUnderline: '#7D7D7D'
       }
     },
   },
