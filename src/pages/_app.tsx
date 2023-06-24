@@ -1,5 +1,8 @@
-import {Analytics} from '@vercel/analytics/react'
 import {AppProps} from "next/app"
+import {ThemeProvider} from "next-themes"
+import {Analytics} from '@vercel/analytics/react'
+
+import Layout from "./layout"
 
 import '../styles/globals.css'
 // import '../styles/md.css'
@@ -7,10 +10,12 @@ import '../styles/globals.css'
 
 function MyApp({Component, pageProps}: AppProps) {
   return (
-    <>
-      <Component {...pageProps}/>
+    <ThemeProvider attribute={'class'}>
+      <Layout>
+        <Component {...pageProps}/>
+      </Layout>
       <Analytics/>
-    </>
+    </ThemeProvider>
   )
 }
 
