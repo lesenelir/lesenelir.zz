@@ -39,7 +39,7 @@ function Navbar() {
       </Link>
 
       <nav className={'flex flex-row gap-6 text-navbarLight dark:text-navbarDark'}>
-        {/* Mobile Icon */}
+        {/* Mobile Icon + Pad Icon */}
         <NavbarIcon device={'mobile'}  href={'/posts'}>
           &#xe634;
         </NavbarIcon>
