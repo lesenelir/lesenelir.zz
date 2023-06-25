@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <>
-      <p className={'flex flex-row gap-2 mt-8 text-sm'}>
+      <p className={'flex flex-row gap-2 mt-8 text-sm text-borderUnderline opacity-60'}>
         <a
           href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
           rel='noreferrer'
