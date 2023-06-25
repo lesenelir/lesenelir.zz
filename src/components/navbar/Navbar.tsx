@@ -31,20 +31,18 @@ function Navbar() {
   if (!mounted) return null
 
   return (
-    <div className={'flex flex-row justify-between p-8'}>
+    <div className={'flex flex-row justify-between p-6'}>
       <Link href='/'>
-        {/*<a className={*/}
-        {/*  'font-comic text-2xl ' +*/}
-        {/*  'hover:text-black hover:opacity-80 dark:hover:text-white dark:hover:opacity-80'*/}
-        {/*}>Lesenelir</a>*/}
-        <LZIcon
-          className={
-            'cursor-pointer hover:text-black hover:opacity-80 ' +
-            'dark:hover:text-white dark:hover:opacity-80'
-          }
-          width={50}
-          height={50}
-        />
+        <a>
+          <LZIcon
+            className={
+              'cursor-pointer hover:text-black hover:opacity-100 ' +
+              'dark:hover:text-white dark:hover:opacity-100'
+            }
+            width={50}
+            height={50}
+          />
+        </a>
       </Link>
 
       <nav className={'flex flex-row gap-6 items-center text-navbarLight dark:text-navbarDark'}>
