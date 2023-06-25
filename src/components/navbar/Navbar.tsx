@@ -4,6 +4,7 @@ import {useTheme} from "next-themes"
 
 import NavbarItem from "./NavbarItem"
 import NavbarIcon from "./NavbarIcon"
+import LZIcon from "../icons/LZIcon"
 
 interface INavbarItem {
   name: string
@@ -32,13 +33,21 @@ function Navbar() {
   return (
     <div className={'flex flex-row justify-between p-8'}>
       <Link href='/'>
-        <a className={
-          'font-comic text-2xl ' +
-          'hover:text-black hover:opacity-80 dark:hover:text-white dark:hover:opacity-80'
-        }>Lesenelir</a>
+        {/*<a className={*/}
+        {/*  'font-comic text-2xl ' +*/}
+        {/*  'hover:text-black hover:opacity-80 dark:hover:text-white dark:hover:opacity-80'*/}
+        {/*}>Lesenelir</a>*/}
+        <LZIcon
+          className={
+            'cursor-pointer hover:text-black hover:opacity-80 ' +
+            'dark:hover:text-white dark:hover:opacity-80'
+          }
+          width={50}
+          height={50}
+        />
       </Link>
 
-      <nav className={'flex flex-row gap-6 text-navbarLight dark:text-navbarDark'}>
+      <nav className={'flex flex-row gap-6 items-center text-navbarLight dark:text-navbarDark'}>
         {/* Mobile Icon + Pad Icon */}
         <NavbarIcon device={'mobile'}  href={'/posts'}>
           &#xe634;
