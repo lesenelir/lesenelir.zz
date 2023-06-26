@@ -4,8 +4,8 @@ import {GetStaticProps} from "next"
 import {IPost} from "../../libs/types"
 import {getSortedPostsData} from "../../libs/postsTool"
 import Item from "../../components/post/Item"
-import Cd from "../../components/utils/Cd";
-import Footer from "../../components/utils/Footer";
+import Cd from "../../components/utils/Cd"
+import Footer from "../../components/utils/Footer"
 
 interface IProps {
   allPostsData: IPost[]
@@ -24,11 +24,7 @@ export const getStaticProps: GetStaticProps = async () => {
 function PostsPage(props: IProps) {
   const {allPostsData} = props
 
-  console.log(allPostsData)
-
-  const getPostsByYear = (year: string) => {
-    return allPostsData.filter(post => post.date.includes(year))
-  }
+  const getPostsByYear = (year: string) => allPostsData.filter(post => post.date.includes(year))
 
   return (
     <>
