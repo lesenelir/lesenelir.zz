@@ -20,7 +20,9 @@ module.exports = {
         textLight: '#555555',
         textDark: '#BBBBBB',
         // border bottom underline
-        borderUnderline: '#7D7D7D'
+        borderUnderline: '#7D7D7D',
+        // posts year color
+        yearColor: '#AAAAAA',
       }
     },
   },
