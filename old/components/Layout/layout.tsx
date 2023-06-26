@@ -28,7 +28,7 @@ function Layout(props: IProps): JSX.Element {
       <Head>
         <title>{siteName}</title>
         <meta name="description" content="Lesenelir's Blog built by Next.js"/>
-        <link rel="icon" href={`/favicon.ico`}/>
+        {/*<link rel="icon" href={`/favicon.ico`}/>*/}
       </Head>
 
       <div className='layout' color-mode={theme}>
