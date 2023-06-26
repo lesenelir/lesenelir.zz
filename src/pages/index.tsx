@@ -80,6 +80,7 @@ function HomePage() {
             <ExternalLink href={'https://mirror.xyz/lesenelir.eth'}>
               {' '}Lesenelir.eth
             </ExternalLink>
+            {'.'}
           </article>
           <Divider/>
 
