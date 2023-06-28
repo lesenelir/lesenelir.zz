@@ -12,3 +12,9 @@ export interface IPostData {
   date: string
   duration: string
 }
+
+export interface ITimelineData {
+  contentHtml: string
+  title: string
+  date: string
+}
