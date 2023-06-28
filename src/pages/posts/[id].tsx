@@ -59,7 +59,7 @@ function Post(props: IProps) {
         <div className={'p-6 max-w-3xl overflow-auto'}>
           <h1 className={'text-2xl font-bold text-black dark:text-white mb-4'}>{postData.title}</h1>
           <PostSubTitle dateString={postData.date} duration={postData.duration}/>
-          {/* TODO: markdown  code css */}
+          {/* Markdown to html code, and add css */}
           <article className={'prose dark:prose-dark'}>
             <div dangerouslySetInnerHTML={{__html: postData.contentHtml}}/>
           </article>
