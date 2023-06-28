@@ -13,6 +13,9 @@ module.exports = {
         'icon': ['iconfont', 'sans-serif'],
       },
       colors: {
+        // background color
+        bgLight: '#FFFFFF',
+        bgDark: '#1D1F24',
         // navbar right side
         navbarLight: '#374151',
         navbarDark: '#E5E7EB',
