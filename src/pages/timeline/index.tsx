@@ -35,7 +35,7 @@ function TimelinePage(props: IProps) {
         <div className={'p-6 max-w-3xl'}>
           {/* Content */}
           <h1 className={'text-3xl text-textLightStrong font-bold dark:text-textDarkStrong'}>Timeline</h1>
-          <article className={'prose dark:prose-d ark'}>
+          <article className={'prose dark:prose-dark'}>
             <div dangerouslySetInnerHTML={{__html: timelineData.contentHtml}}/>
           </article>
 
