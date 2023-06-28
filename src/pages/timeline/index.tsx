@@ -3,8 +3,8 @@ import {GetStaticProps} from "next"
 
 import {ITimelineData} from "../../libs/types"
 import {getTimePost} from "../../libs/timeTool"
-import Cd from "../../components/utils/Cd";
-import Footer from "../../components/utils/Footer";
+import Cd from "../../components/utils/Cd"
+import Footer from "../../components/utils/Footer"
 
 interface IProps {
   timelineData: ITimelineData
