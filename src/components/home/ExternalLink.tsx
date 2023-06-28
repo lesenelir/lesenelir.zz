@@ -13,7 +13,11 @@ function ExternalLink(props: IProps) {
       rel='noreferrer'
       target='_blank'
       href={href}
-      className={'text-black dark:text-white border-solid border-b-[1px] border-b-borderUnderline border-opacity-30 hover:border-opacity-100'}
+      className={
+        'text-black dark:text-white border-solid border-b-[1px] ' +
+        'border-b-borderUnderline border-opacity-30 hover:border-opacity-100 ' +
+        'dark:border-opacity-50 dark:hover:border-opacity-100'
+      }
     >
       {children}
     </a>

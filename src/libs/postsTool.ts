@@ -63,7 +63,9 @@ async function getPostDataById(id: string) {
   const matterResult: matter.GrayMatterFile<string> = matter(fileContents) // .md metadata
 
   // Use remark to convert markdown into HTML string
-  const fileContent:VFile = await remark().use(html).process(matterResult.content)
+  const fileContent:VFile = await remark()
+    .use(html)
+    .process(matterResult.content)
   const contentHtml: string = fileContent.toString()
 
   return {
