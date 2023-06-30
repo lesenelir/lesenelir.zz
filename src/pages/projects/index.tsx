@@ -3,7 +3,7 @@ import Head from "next/head"
 import Item from "../../components/project/Item"
 import Cd from "../../components/utils/Cd"
 import Footer from "../../components/utils/Footer"
-import {deepLearningList, frontEndList, othersList, web3List} from "../../components/project/data"
+import {deepLearningList, frontEndList, othersList, web3List} from "../../libs/projectsTool"
 
 function ProjectsPage() {
   return (
