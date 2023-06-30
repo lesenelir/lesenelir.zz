@@ -9,29 +9,10 @@
   font-style: normal;
 }
 
-/*!* Dark Theme & Light Theme *!*/
-/*:root {*/
-/*  --surfaceMain: #555555; !* Deep Gray *!*/
-/*  --surfaceSub: #7D7D7D; !* Light Gray *!*/
-/*  --surfaceNavbar: #374151;*/
-/*  --surfaceStrong: #000000;*/
-/*  --surfaceBackground: #ffffff;*/
-/*  --surfaceCodeBlock: #E8EBEB;*/
-/*  --surfaceBtnBackground: #E6E6E6;*/
+.theme {
+  @apply min-h-screen text-textLight bg-bgLight dark:text-textDark dark:bg-opacity-50;
+}
 
-/*  !*background: linear-gradient(to bottom, transparent, rgb(255, 255, 255)) rgb(221, 226, 227);*!*/
-/*  transition: 0.8s;*/
-/*}*/
-
-/*:root {*/
-/*  --surfaceMain: #BBBBBB;*/
-/*  --surfaceSub: #E5E7EB;*/
-/*  --surfaceNavbar: #E5E7EB;*/
-/*  --surfaceStrong: #ffffff;*/
-/*  --surfaceBackground: #000000;*/
-/*  --surfaceCodeBlock: #4b4b4b;*/
-/*  --surfaceBtnBackground: #212121;*/
-
-/*  !*background: linear-gradient(to bottom, transparent, rgb(0, 0, 0)) rgb(29, 31, 36);*!*/
-/*  transition: 0.8s;*/
-/*}*/
+.dark .theme {
+  background: linear-gradient(to bottom, transparent, rgb(0, 0, 0)) rgb(29, 31, 36);
+}
