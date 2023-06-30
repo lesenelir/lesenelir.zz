@@ -25,3 +25,11 @@ export interface ITimelineData {
   title: string
   date: string
 }
+
+export default interface IImage {
+  date: string
+  src: string
+  width: number
+  height: number
+  alt: string
+}
