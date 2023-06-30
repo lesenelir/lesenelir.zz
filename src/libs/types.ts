@@ -13,6 +13,13 @@ export interface IPostData {
   duration: string
 }
 
+export interface IProject {
+  name: string
+  description: string
+  icon: string
+  repo: string
+}
+
 export interface ITimelineData {
   contentHtml: string
   title: string

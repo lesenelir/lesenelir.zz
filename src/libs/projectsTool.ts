@@ -1,9 +1,4 @@
-interface IProject {
-  name: string
-  description: string
-  icon: string
-  repo: string
-}
+import {IProject} from "./types"
 
 export const frontEndList: IProject[] = [
   {
