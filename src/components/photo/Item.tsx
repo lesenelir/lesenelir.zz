@@ -15,7 +15,7 @@ function Item(props: IProps) {
   return (
     <>
       <PhotoProvider>
-        <div className={'flex gap-2'}>
+        <div className={'flex gap-2 mb-4'}>
           {getPhotosByDate(currentDate).map(photo => (
             <PhotoView key={photo.alt} src={photo.src}>
               <Image
@@ -23,6 +23,7 @@ function Item(props: IProps) {
                 width={photo.width}
                 height={photo.height}
                 alt={photo.alt}
+                className={'cursor-pointer'}
               />
             </PhotoView>
           ))}

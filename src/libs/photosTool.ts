@@ -1,6 +1,37 @@
 import IImage from "./types"
 
 export const images: IImage[] = [
+  // 2023-06-11
+  {
+    date: '2023-06-11',
+    src: '/photos/2023-06-11/01.jpg',
+    width: 200,
+    height: 200,
+    alt: '2023-06-11_01'
+  },
+  {
+    date: '2023-06-11',
+    src: '/photos/2023-06-11/02.jpg',
+    width: 300,
+    height: 200,
+    alt: '2023-06-11_02'
+  },
+  {
+    date: '2023-06-11',
+    src: '/photos/2023-06-11/03.jpg',
+    width: 200,
+    height: 200,
+    alt: '2023-06-11_03'
+  },
+  // 2023-06-05
+  {
+    date: '2023-06-05',
+    src: '/photos/2023-06-05/01.jpg',
+    width: 720,
+    height: 400,
+    alt: '2023-06-05_01'
+  },
+  // 2022-11-30
   {
     date: '2022-11-30',
     src: '/photos/2022-11-30/01.jpg',
