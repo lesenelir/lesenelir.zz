@@ -22,11 +22,12 @@ date: '2020-06-08'
 - In December, wanted to be a Web3 builder in the future
 
 ### 2022
-- COVID-19 massive outbreak in spring, **Quzhou, Shanghai, Urumqi, etc**.
+- COVID-19 massive outbreak in spring, **Quzhou, Shanghai, Urumqi, etc**
 - Systematically start learning Front-end & Blockchain & Ethereum
 - There have been campaigns to against the epidemic policy in Chinese universities
 - Keep Learning & Keep Building
 
 ### 2023
-- Start relearning English in my free time
-- Feeling exhausted with my graduation thesis in March.
+- Start learning English in my free time
+- Feeling exhausted with my graduation thesis in March
+- Graduated with a master's degree in June, taking a gap period at home
