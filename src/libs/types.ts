@@ -33,3 +33,9 @@ export default interface IImage {
   height: number
   alt: string
 }
+
+export interface IWave {
+  address: string,
+  timestamp: Date,
+  message: string
+}

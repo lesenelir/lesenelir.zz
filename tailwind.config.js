@@ -38,6 +38,9 @@ module.exports = {
         // pre code bg color
         preCodeBgLight: '#F8F8F8',
         preCodeBgDark: '#0E0E0E',
+        // button color
+        buttonLightColor: '#E6E6E6',
+        buttonDarkColor: '#212121'
       },
       typography: (theme) => ({
         DEFAULT: {
