@@ -1,9 +1,0 @@
-.container {
-  display: flex;
-  justify-content: center;
-}
-
-.title {
-  color: var(--surfaceStrong);
-  transition: 0.8s;
-}
