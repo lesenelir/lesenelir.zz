@@ -17,7 +17,7 @@ function HomePage() {
       <div className={'flex flex-row justify-center'}>
         <div className={'p-6 max-w-3xl'}>
           <h1 className={'text-4xl font-comic font-semibold text-black mb-6 dark:text-white'}>Lesenelir Zhou</h1>
-          <article className={'leading-8'}>
+          <article className={'leading-8 text-justify'}>
             {`
               Hi, I'm Lesenelir Zhou, a dedicated web developer with a degree in Computer Science.
               The current focus is on acquiring expertise in front-end development, 
@@ -28,7 +28,7 @@ function HomePage() {
           </article>
           <Divider/>
 
-          <article className={'leading-8'}>
+          <article className={'leading-8 text-justify'}>
             {`
               I take pleasure in coding and I'm always keen to share the knowledge I've gained. 
               For me, programming is more than just a skill, it's a means of self-expression and a channel for creativity. 
@@ -64,7 +64,7 @@ function HomePage() {
           </article>
           <Divider/>
 
-          <article className={'leading-8'}>
+          <article className={'leading-8 text-justify'}>
             {`
               At the same time, I am also interested in web3 & crypto. 
               I'm currently acquiring the fundamentals of web3 knowledge and contract development through 
@@ -84,7 +84,7 @@ function HomePage() {
           </article>
           <Divider/>
 
-          <article className={'leading-8'}>
+          <article className={'leading-8 text-justify'}>
             {`
               Apart from programming, I enjoy watching movies. 
               I aspire to pursue a degree in film directing at New York University 
