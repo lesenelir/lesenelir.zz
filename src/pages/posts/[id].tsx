@@ -40,8 +40,6 @@ export const getStaticProps: GetStaticProps = async ({params}: {params: {id: str
 function Post(props: IProps) {
   const {postData} = props
 
-  console.log(postData)
-
   useEffect(() => {
     hljs.registerLanguage("jsx", javascript)
     hljs.highlightAll()
