@@ -1,6 +1,6 @@
-# meta-portfolio 💨
+# Lesenelir.me 💨
 
-My portfolio blog website built with next.js, inspired by antfu's blog. Keeping Building~~
+My portfolio blog website built with next.js, inspired by [antfu's blog](https://antfu.me/). Keeping Building~~
 
 ---
 
