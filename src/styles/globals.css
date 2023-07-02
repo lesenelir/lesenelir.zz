@@ -11,6 +11,7 @@
 
 .theme {
   @apply min-h-screen text-textLight bg-bgLight dark:text-textDark dark:bg-opacity-50;
+  @apply transition-colors duration-300 ease-in;
 }
 
 .dark .theme {
