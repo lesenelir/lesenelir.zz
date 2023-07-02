@@ -54,6 +54,7 @@ module.exports = {
               borderBottom: '1px solid rgba(125, 125, 125, 0.3)',
               '&:hover': {
                 borderBottom: '1px solid rgba(125, 125, 125, 1)',
+                transition: 'all 0.3s ease-in-out',
               },
             },
             strong: {
@@ -126,6 +127,7 @@ module.exports = {
               borderBottom: '1px solid rgba(125, 125, 125, 0.5)',
               '&:hover': {
                 borderBottom: '1px solid rgba(125, 125, 125, 1)',
+                transition: 'all 0.3s ease-in-out',
               },
             },
             strong: {

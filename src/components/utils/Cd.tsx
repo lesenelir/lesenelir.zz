@@ -17,6 +17,7 @@ function Cd() {
         <span className={'mr-3 font-medium text-borderUnderline opacity-60'}>&gt;</span>
         <a className={
           'text-borderUnderline opacity-60' +
+          'transition-colors duration-300 ease-in ' +
           'border-solid border-b-[1px] border-b-borderUnderline border-opacity-30 dark:border-opacity-60 ' +
           'hover:border-opacity-60 hover:text-black dark:hover:text-white dark:hover:border-opacity-100'
         }>

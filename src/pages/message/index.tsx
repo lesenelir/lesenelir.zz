@@ -187,6 +187,7 @@ function MessagePage() {
                 target='_blank'
                 className={
                   'text-black dark:text-white border-solid border-b-[1px] ' +
+                  'transition-colors duration-300 ease-in ' +
                   'border-b-borderUnderline border-opacity-30 hover:border-opacity-100 ' +
                   'dark:border-opacity-50 dark:hover:border-opacity-100'
                 }
@@ -200,6 +201,7 @@ function MessagePage() {
                 target='_blank'
                 className={
                   'text-black dark:text-white border-solid border-b-[1px] ' +
+                  'transition-colors duration-300 ease-in ' +
                   'border-b-borderUnderline border-opacity-30 hover:border-opacity-100 ' +
                   'dark:border-opacity-50 dark:hover:border-opacity-100'
                 }
@@ -221,6 +223,7 @@ function MessagePage() {
             onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setMessage(e.target.value)}
             className={
               'p-4 border w-full rounded-lg mt-1 resize-none focus-visible:outline-none ' +
+              'transition-colors duration-300 ease-in ' +
               'text-textLight dark:text-textDark bg-bgLight dark:bg-bgDark '
             }
           />
@@ -228,6 +231,7 @@ function MessagePage() {
           <button
             className={
               'w-full p-2 rounded-lg my-4 bg-buttonLightColor dark:bg-buttonDarkColor opacity-90 ' +
+              'transition-colors duration-300 ease-in ' +
               'hover:text-textLightStrong dark:hover:text-textDarkStrong hover:opacity-100 '
             }
             onClick={wave}
@@ -240,6 +244,7 @@ function MessagePage() {
             <button
               className={
                 'w-full p-2 rounded-lg bg-buttonLightColor dark:bg-buttonDarkColor opacity-90 ' +
+                'transition-colors duration-300 ease-in ' +
                 'hover:text-textLightStrong dark:hover:text-textDarkStrong hover:opacity-100 '
               }
               onClick={connectWallet}

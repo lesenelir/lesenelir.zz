@@ -17,6 +17,7 @@ function Item(props: IProps) {
       <div className={
         'flex flex-row gap-4 items-center group ' +
         'max-w-xs max-h-32 ' +
+        'transition duration-300 ease-in ' +
         'p-4 rounded-lg hover:bg-borderUnderline hover:bg-opacity-10'
       }>
         <span dangerouslySetInnerHTML={{__html: icon}} className={'font-icon text-3xl group-hover:text-black dark:group-hover:text-white'}/>

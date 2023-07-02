@@ -11,8 +11,8 @@ function Item(props: IProps) {
   return (
     <Link href={`/posts/${id}`}>
       <div className={'cursor-pointer my-4 group'}>
-        <p className={'group-hover:text-black dark:group-hover:text-white'}>{title}</p>
-        <p className={'text-sm text-borderUnderline opacity-60 group-hover:opacity-100'}>
+        <p className={'group-hover:text-black dark:group-hover:text-white transition-colors duration-300 ease-in'}>{title}</p>
+        <p className={'text-sm text-borderUnderline opacity-60 group-hover:opacity-100 transition-opacity duration-300 ease-in'}>
           {format(parseISO(date), 'MMM d, yyyy')}{' '}{'⋅'}{' '}{duration}
         </p>
       </div>
