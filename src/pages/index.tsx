@@ -44,6 +44,7 @@ function HomePage() {
             <Link href={'/projects'}>
               <a className={
                 'text-black dark:text-white ' +
+                'transition-colors duration-300 ease-in ' +
                 'border-solid border-b-[1px] border-b-borderUnderline border-opacity-30 hover:border-opacity-100'
               }>Projects page.</a>
             </Link>
