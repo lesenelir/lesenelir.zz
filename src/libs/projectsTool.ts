@@ -63,5 +63,17 @@ export const othersList: IProject[] = [
     description: 'Just learn how to write unit test in javascript',
     icon: '&#xe606;',
     repo: 'https://github.com/lesenelir/javascript-unit-test'
+  },
+  {
+    name: 'Type',
+    description: 'A typing animation and replicating the animation from OpenAI',
+    icon: '&#xe74e;',
+    repo: 'https://github.com/lesenelir/type'
+  },
+  {
+    name: 'Suspense',
+    description: 'Data fetching with React Suspense Component',
+    icon: '&#xe611;',
+    repo: 'https://github.com/lesenelir/suspense'
   }
 ]
