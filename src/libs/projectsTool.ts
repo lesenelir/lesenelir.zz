@@ -53,6 +53,12 @@ export const deepLearningList: IProject[] = [
 
 export const othersList: IProject[] = [
   {
+    name: 'GMWeb3',
+    description: 'A cli tool for generating DApp front-end templates',
+    icon: '&#xe639;',
+    repo: 'https://github.com/lesenelir/gmweb3'
+  },
+  {
     name: 'LeetCode',
     description: 'JavaScript solutions for Personal Leetcode problems',
     icon: '&#xebf2;',
