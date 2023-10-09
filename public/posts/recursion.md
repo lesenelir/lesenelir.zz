@@ -189,8 +189,7 @@ fib(5)
 
 上述斐波那契数列代码，利用递归树遍历过程如下：
 
-[comment]: <> (![]&#40;https://raw.githubusercontent.com/lesenelir/lesenelir.me/master/public/images/resursion-1.png&#41;)
-![](../images/resursion-1.png)
+![recursion image](../images/resursion-1.png)
 
 
 > 如上图所示:
