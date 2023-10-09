@@ -39,12 +39,12 @@ main()
 
 // ------------------------------------
 // 最终输出结果如下：
-A Start
-B Start
-C Start
-C End
-B End
-A End
+// A Start
+// B Start
+// C Start
+// C End
+// B End
+// A End
 ```
 
 要理解递归，首先得从函数调用栈开始说起。如上述代码块，当一个函数调用后，就会将函数压入函数调用栈中。
